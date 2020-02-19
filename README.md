@@ -10,3 +10,5 @@ Beta Experiment is a communication system that includes a design system and a cs
 - Walk a mile in someone else's shoes while holding hands with them. Do this with as many differnet people as possible. Listen to their truths, then tell them your truths. Validate each other's truths together. Debate ideas for improvements. Give each other a hug and tell each other it's going to be okay. Act on those ideas. You can start with one thing to help one person other than yourself. Iterate again and again. Infinite thought.
 
 We built the Internet for all. Help us make experiences positive and we will all be rewarded. Join us in the future, where you are free to think, explore and grow! There are no border walls, only the ones we carry in our minds, let go of negative systems. We need your help to create positive systems and answer hard questions of how we all live positively. The system of helping each other includes you, it needs you! We need to help each other. Let's share how we survive positively and do it really fast. Enjoy your blip!
+
+[http://betaexperiment.com/](http://betaexperiment.com/)
