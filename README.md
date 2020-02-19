@@ -1,4 +1,5 @@
-# β Beta Experiment, Save Humanity by Accelerating Positive
+# β Beta Experiment
+## Save Humanity by Accelerating Positive
 Humanity is a system. Humans are nodes within the system. Humans have senses, inputs and outputs. Energy is transferred in waves through senses. We want to be efficient in the transfer of energy waves. Our shared wavelength is, “Save Humanity”. That idea positively vibrates the system, and when we are vibrating in unison, we are stronger. We choose to accelerate positive communication within our system. Here's how we will do it!
 
 - Add people to the internet
