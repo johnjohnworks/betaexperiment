@@ -1,0 +1,110 @@
+/* START outline.scss */
+/* Import Variables */
+/* Outline Arrays */
+/* Outline Color */
+/* Each Loop to Generate Classes */
+.outline-color-black,
+.outline-black {
+  outline-color: black;
+}
+
+.outline-color-white,
+.outline-white {
+  outline-color: white;
+}
+
+.outline-color-brand,
+.outline-brand {
+  outline-color: #7ab1ff;
+}
+
+.outline-color-primary,
+.outline-primary {
+  outline-color: #7ab1ff;
+}
+
+/* Outline Offset */
+/* Each Loop to Generate Classes */
+.outline-offset-0 {
+  outline-offset: "0";
+}
+
+.outline-offset-1em {
+  outline-offset: "1em";
+}
+
+/* Outline Style */
+/* Each Loop to Generate Classes */
+.outline-style-dotted,
+.outline-dotted {
+  outline-style: "dotted";
+}
+
+.outline-style-dashed,
+.outline-dashed {
+  outline-style: "dashed";
+}
+
+.outline-style-solid,
+.outline-solid {
+  outline-style: "solid";
+}
+
+.outline-style-double,
+.outline-double {
+  outline-style: "double";
+}
+
+.outline-style-groove,
+.outline-groove {
+  outline-style: "groove";
+}
+
+.outline-style-ridge,
+.outline-ridge {
+  outline-style: "ridge";
+}
+
+.outline-style-inset,
+.outline-inset {
+  outline-style: "inset";
+}
+
+.outline-style-outset,
+.outline-outset {
+  outline-style: "outset";
+}
+
+.outline-style-none,
+.outline-none {
+  outline-style: "none";
+}
+
+.outline-style-hidden,
+.outline-hidden {
+  outline-style: "hidden";
+}
+
+/* Outline Width */
+/* Each Loop to Generate Classes */
+.outline-style-thin,
+.outline-thin {
+  outline-style: "thin";
+}
+
+.outline-style-medium,
+.outline-medium {
+  outline-style: "medium";
+}
+
+.outline-style-thick,
+.outline-thick {
+  outline-style: "thick";
+}
+
+.outline-style-0,
+.outline-0 {
+  outline-style: "0";
+}
+
+/* END outline.scss *//*# sourceMappingURL=outline.css.map */

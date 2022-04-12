@@ -1,0 +1,72 @@
+/* Each Loop to Generate Classes */
+.overflow-visible {
+  overflow: visible;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-initial {
+  overflow: initial;
+}
+
+.overflow-x-initial {
+  overflow-x: initial;
+}
+
+.overflow-y-initial {
+  overflow-y: initial;
+}
+
+.overflow-inherit {
+  overflow: inherit;
+}
+
+.overflow-x-inherit {
+  overflow-x: inherit;
+}
+
+.overflow-y-inherit {
+  overflow-y: inherit;
+}/*# sourceMappingURL=overflow.css.map */

@@ -1,0 +1,8 @@
+/* Font Grow Pairs */
+
+/* Each Loop to Generate Classes */
+@for $i from 0 through 100 {
+  .opacity-#{$i} {
+    opacity: calc(#{$i}/100);
+  }
+}

@@ -1,0 +1,32 @@
+@import '../variables.scss';
+
+body,
+body.dark {
+  background-color: $bg-dark-secondary;
+  color: $text-dark-secondary;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  scrollbar-color: #6b6b6b #2c2c2c;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+  border-radius: 0.5em;
+  border: thin solid #b8b8b8;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+body.light {
+  background-color: $bg-light-primary;
+  color: $text-light-secondary;
+  scrollbar-color: #c1c1c1 #fafafa;
+}

@@ -1,0 +1,20 @@
+@import '../variables';
+
+.circle {
+  border-radius: 50%;
+}
+
+/* Each Loop to Generate Classes */
+@each $unit-name,
+$unit in $spacing-units-array {
+  .circle-#{$unit-name} {
+    border-radius: 50%;
+    height: #{$unit};
+    width: #{$unit};
+  }
+
+  .square-#{$unit-name} {
+    height: #{$unit};
+    width: #{$unit};
+  }
+}

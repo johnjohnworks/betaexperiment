@@ -1,0 +1,36 @@
+@import '../variables';
+
+details {}
+
+details>summary {
+  color: $color-primary;
+  text-decoration: underline;
+  min-height: 2.75em;
+  line-height: 2.75em;
+  transition: background-color ease 1s,
+    border-color ease 1s,
+    padding-left ease 1s,
+    outline ease 1s,
+    color ease 1s;
+}
+
+details>summary:focus {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  color: black;
+  padding-left: 1em;
+  outline: thin solid $color-primary;
+}
+
+details>summary:active {
+  background-color: white;
+  color: black;
+  padding-left: 1em;
+}
+
+details>summary:hover {
+  background-color: $bg-hover;
+  color: white;
+  cursor: pointer;
+  padding-left: 1em;
+}

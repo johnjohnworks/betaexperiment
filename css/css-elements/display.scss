@@ -1,0 +1,114 @@
+@use '../variables';
+
+.display-inline,
+.inline {
+  display: inline;
+}
+
+.display-block,
+.block {
+  display: block;
+}
+
+.display-contents,
+.contents {
+  display: contents;
+}
+
+.display-flex,
+.flex {
+  display: flex;
+}
+
+.display-grid,
+.grid {
+  display: grid;
+}
+
+.display-inline-block,
+.inline-block {
+  display: inline-block;
+}
+
+.display-inline-flex,
+.inline-flex {
+  display: inline-flex;
+}
+
+.display-inline-grid,
+.inline-grid {
+  display: inline-grid;
+}
+
+.display-inline-table,
+.inline-table {
+  display: inline-table;
+}
+
+.display-list-item,
+.list-item {
+  display: list-item;
+}
+
+.display-run-in,
+.run-in {
+  display: run-in;
+}
+
+.display-table,
+.table {
+  display: run-in;
+}
+
+.display-table-caption,
+.table-caption {
+  display: table-caption;
+}
+
+.display-table-column-group,
+.table-column-group {
+  display: table-column-group;
+}
+
+.display-table-header-group,
+.table-header-group {
+  display: table-header-group;
+}
+
+.display-table-footer-group,
+.table-footer-group {
+  display: table-footer-group;
+}
+
+.display-table-row-group,
+.table-row-group {
+  display: table-row-group;
+}
+
+.display-table-cell,
+.table-cell,
+.cell {
+  display: table-cell;
+}
+
+.display-table-column,
+.table-column {
+  display: table-column;
+}
+
+.display-table-row,
+.table-row {
+  display: table-row;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-initial {
+  display: initial;
+}
+
+.display-inherit {
+  display: inherit;
+}

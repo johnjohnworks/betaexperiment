@@ -1,0 +1,47 @@
+@import '../variables';
+
+/* Each Loop to Generate Classes */
+@each $width-name,
+$width in $spacing-units-array {
+  .width-#{$width-name} {
+    width: #{$width};
+  }
+
+  .max-width-#{$width-name},
+  .maxw-#{$width-name} {
+    max-width: #{$width};
+  }
+
+  .min-width-#{$width-name},
+  .minw-#{$width-name} {
+    min-width: #{$width};
+  }
+}
+
+.measure-1 {
+  max-width: 44ex !important;
+}
+
+.measure-2 {
+  max-width: 60ex !important;
+}
+
+.measure-3 {
+  max-width: 64ex !important;
+}
+
+.measure-4 {
+  max-width: 68ex !important;
+}
+
+.measure-5 {
+  max-width: 72ex !important;
+}
+
+.measure-6 {
+  max-width: 88ex !important;
+}
+
+.measure-none {
+  max-width: none !important;
+}

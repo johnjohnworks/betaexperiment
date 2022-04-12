@@ -1,0 +1,231 @@
+/* START _button.scss */
+button,
+.button,
+.btn,
+a.button,
+a.btn {
+  padding: 0.75em 1.5em;
+  background-color: #ADCFFF;
+  border-color: black;
+  border-radius: 1.625em;
+  border-style: solid;
+  border-width: 0.0625em;
+  color: black;
+  cursor: pointer;
+  font-size: inherit;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: all ease 1s;
+}
+
+button:focus,
+button.focus,
+.button:focus,
+.button.focus,
+.btn:focus,
+.btn.focus,
+a.button:focus,
+a.button.focus,
+a.btn:focus,
+a.btn.focus {
+  background-color: cyan;
+  border-color: cyan;
+  color: black;
+  outline: thin solid cyan;
+}
+
+button:active,
+button.active,
+.button:active,
+.button.active,
+.btn:active,
+.btn.active,
+a.button:active,
+a.button.active,
+a.btn:active,
+a.btn.active {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+button:hover,
+button.hover,
+.button:hover,
+.button.hover,
+.btn:hover,
+.btn.hover,
+a.button:hover,
+a.button.hover,
+a.btn:hover,
+a.btn.hover {
+  background-color: #1E2C40;
+  border-color: white;
+  color: white;
+  outline: thin solid white;
+}
+
+.button-black,
+.btn-black {
+  background-color: black;
+  border-color: black;
+  color: #000000;
+}
+
+.button-black:hover,
+.btn-black:hover,
+.btn-black.hover {
+  background-color: teal;
+}
+
+.button-black:focus,
+.btn-black:focus,
+.btn-black.focus {
+  background-color: navy;
+}
+
+.button-black:active,
+.btn-black:active,
+.btn-black.active {
+  background-color: #6a6a6a;
+}
+
+.button-black[disabled],
+.btn-black[disabled],
+.button-black.disabled,
+.btn-black.disabled {
+  background-color: transparent;
+  color: #575757;
+  cursor: not-allowed;
+}
+
+.button-white,
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: #ffffff;
+}
+
+.button-white:hover,
+.btn-white:hover,
+.btn-white.hover {
+  background-color: #80ffff;
+}
+
+.button-white:focus,
+.btn-white:focus,
+.btn-white.focus {
+  background-color: #8080ff;
+}
+
+.button-white:active,
+.btn-white:active,
+.btn-white.active {
+  background-color: #e9e9e9;
+}
+
+.button-white[disabled],
+.btn-white[disabled],
+.button-white.disabled,
+.btn-white.disabled {
+  background-color: transparent;
+  color: #575757;
+  cursor: not-allowed;
+}
+
+.button-brand,
+.btn-brand {
+  background-color: #ADCFFF;
+  border-color: #ADCFFF;
+  color: #ffffff;
+}
+
+.button-brand:hover,
+.btn-brand:hover,
+.btn-brand.hover {
+  background-color: #57e7ff;
+}
+
+.button-brand:focus,
+.btn-brand:focus,
+.btn-brand.focus {
+  background-color: #5768ff;
+}
+
+.button-brand:active,
+.btn-brand:active,
+.btn-brand.active {
+  background-color: #c0d1e9;
+}
+
+.button-brand[disabled],
+.btn-brand[disabled],
+.button-brand.disabled,
+.btn-brand.disabled {
+  background-color: transparent;
+  color: #575757;
+  cursor: not-allowed;
+}
+
+.button-primary,
+.btn-primary {
+  background-color: #ADCFFF;
+  border-color: #ADCFFF;
+  color: #ffffff;
+}
+
+.button-primary:hover,
+.btn-primary:hover,
+.btn-primary.hover {
+  background-color: #57e7ff;
+}
+
+.button-primary:focus,
+.btn-primary:focus,
+.btn-primary.focus {
+  background-color: #5768ff;
+}
+
+.button-primary:active,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #c0d1e9;
+}
+
+.button-primary[disabled],
+.btn-primary[disabled],
+.button-primary.disabled,
+.btn-primary.disabled {
+  background-color: transparent;
+  color: #575757;
+  cursor: not-allowed;
+}
+
+button[disabled],
+button.disabled,
+.button[disabled],
+.button.disabled,
+.btn[disabled],
+.btn.disabled,
+a.button[disabled],
+a.button.disabled,
+a.btn[disabled],
+a.btn.disabled,
+button[disabled]:hover,
+button.disabled:hover,
+.button[disabled]:hover,
+.button.disabled:hover,
+.btn[disabled]:hover,
+.btn.disabled:hover,
+a.button[disabled]:hover,
+a.button.disabled:hover,
+a.btn[disabled]:hover,
+a.btn.disabled:hover {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.25);
+  border-style: none;
+  border-width: 0.0625em;
+  color: #575757;
+  outline: none;
+  cursor: not-allowed;
+}/*# sourceMappingURL=button.css.map */

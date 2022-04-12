@@ -1,0 +1,30 @@
+/* START alert.scss */
+.alert {
+  padding: 1em;
+  border-left-width: thick;
+  border-left-style: solid;
+  color: black;
+  display: block;
+}
+
+.alert-black {
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.alert-white {
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.alert-brand {
+  border-color: #7ab1ff;
+  background-color: rgba(122, 177, 255, 0.25);
+}
+
+.alert-primary {
+  border-color: #7ab1ff;
+  background-color: rgba(122, 177, 255, 0.25);
+}
+
+/* END alert.scss *//*# sourceMappingURL=alert.css.map */

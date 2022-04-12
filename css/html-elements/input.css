@@ -1,0 +1,20 @@
+/* START input.scss */
+/* Import Variables */
+/* Each Loop to Generate Classess */
+.input-black {
+  border-color: black;
+}
+
+.input-white {
+  border-color: white;
+}
+
+.input-brand {
+  border-color: #7ab1ff;
+}
+
+.input-primary {
+  border-color: #7ab1ff;
+}
+
+/* END input.scss *//*# sourceMappingURL=input.css.map */

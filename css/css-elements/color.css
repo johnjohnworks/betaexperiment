@@ -1,0 +1,19 @@
+/* START color.scss */
+/* Each Loop to Generate Classess */
+.color-black {
+  color: black;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-brand {
+  color: #7ab1ff;
+}
+
+.color-primary {
+  color: #7ab1ff;
+}
+
+/* END color.scss *//*# sourceMappingURL=color.css.map */

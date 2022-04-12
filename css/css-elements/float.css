@@ -1,0 +1,23 @@
+/* START float.scss */
+/* Each Loop to Generate Classes */
+.float-none {
+  float: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-initial {
+  float: initial;
+}
+
+.float-inherit {
+  float: inherit;
+}
+
+/* END float.scss *//*# sourceMappingURL=float.css.map */

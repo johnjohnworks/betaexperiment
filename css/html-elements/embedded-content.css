@@ -1,0 +1,29 @@
+/* https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6 https://neumorphism.io/ */
+/* Embedded Content */
+embed,
+iframe,
+object,
+video,
+audio,
+canvas {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+audio {
+  background-color: #f1f3f4;
+}
+
+canvas {
+  background-color: rgba(129, 129, 129, 0.25);
+}
+
+img,
+img ~ map {
+  max-width: 100%;
+}
+
+video::selection {
+  background-color: transparent !important;
+}/*# sourceMappingURL=embedded-content.css.map */

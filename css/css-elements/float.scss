@@ -1,0 +1,11 @@
+/* START float.scss */
+$float-array: (none, left, right, initial, inherit);
+
+/* Each Loop to Generate Classes */
+@each $float in $float-array {
+  .float-#{$float} {
+    float: #{$float};
+  }
+}
+
+/* END float.scss */

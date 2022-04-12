@@ -1,0 +1,144 @@
+/* START background.scss */
+@import '../variables';
+
+.background-none,
+.bg-none {
+  background: none !important;
+}
+
+/* Background Position. The first value is the horizontal position and the second value is the vertical. */
+.background-top,
+.bg-top {
+  background-position: top;
+}
+
+.background-right,
+.bg-right {
+  background-position: right;
+}
+
+.background-bottom,
+.bg-bottom {
+  background-position: bottom;
+}
+
+.background-left,
+.bg-left {
+  background-position: left;
+}
+
+.background-center,
+.bg-center {
+  background-position: center;
+}
+
+/* Background Repeat */
+.background-repeat,
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.background-repeat,
+.bg-repeat {
+  background-repeat: repeat;
+}
+
+.background-repeat-x,
+.bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.background-repeat-y,
+.bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+.background-no-repeat,
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.background-space,
+.bg-space {
+  background-repeat: space;
+}
+
+.background-round,
+.bg-round {
+  background-repeat: space;
+}
+
+.background-initial,
+.bg-initial {
+  background-repeat: initial;
+}
+
+.background-inherit,
+.bg-inherit {
+  background-repeat: inherit;
+}
+
+/* Background Size */
+.background-auto,
+.bg-auto {
+  background-size: auto;
+}
+
+.background-cover,
+.bg-cover {
+  background-size: cover;
+}
+
+
+.background-contain,
+.bg-contain {
+  background-size: contain;
+}
+
+.background-initial,
+.bg-initial {
+  background-size: initial;
+}
+
+.background-inherit,
+.bg-inherit {
+  background-size: inherit;
+}
+
+/* Colors */
+@each $color-name,
+$color-value in $colors-array {
+
+  .background-color-#{$color-name},
+  .background-#{$color-name},
+  .bg-#{$color-name} {
+    background-color: $color-value;
+  }
+}
+
+.bg-dark-primary {
+  background-color: black;
+}
+
+.bg-dark-secondary {
+  background-color: $gray-900;
+}
+
+.bg-dark-tertiary {
+  background-color: $gray-600;
+}
+
+.bg-light-primary {
+  background-color: white;
+}
+
+.bg-light-secondary {
+  background-color: $gray-50;
+}
+
+.bg-light-tertiary {
+  background-color: $gray-100;
+}
+
+/* END Colors */
+/* END background.scss */

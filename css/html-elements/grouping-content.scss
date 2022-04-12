@@ -1,0 +1,110 @@
+@import '../variables';
+
+/* Grouping Content */
+div {}
+
+dl {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 2em;
+}
+
+dl dt {
+  font-weight: bolder;
+}
+
+dl dd:before {
+  content: "- ";
+}
+
+dl dd {
+  margin-inline-start: 0;
+}
+
+figure {
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-bottom: 2em;
+}
+
+figure>img {
+  border: thin solid rgba(128, 128, 128, 0.25);
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
+
+figure figcaption {
+  box-sizing: border-box;
+  margin-top: 1em;
+  text-align: right;
+  color: rgba(128, 128, 128, 0.75);
+  font-size: 75%;
+  padding-right: 1.5em;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 2em;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+pre {}
+
+hr {
+  color: $gray-400;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 2em 0;
+}
+
+br {}
+
+blockquote {
+  background-color: rgba(128, 128, 128, 0.25);
+  border: thin solid rgba(128, 128, 128, 0.25);
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding: 1em 1.5em;
+}
+
+ol {
+  margin-block-start: 0;
+  margin-block-end: 2em;
+  padding-inline-start: 1em;
+  list-style: decimal;
+}
+
+ol ol {
+  list-style: lower-alpha;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+ul {
+  list-style: square;
+  margin-block-start: 0;
+  margin-block-end: 2em;
+  padding-inline-start: 1.1em;
+}
+
+ul ul {
+  list-style: disc;
+}
+
+ul ul ul {
+  list-style: circle;
+}
+
+li {}

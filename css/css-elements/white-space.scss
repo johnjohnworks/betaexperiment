@@ -1,0 +1,17 @@
+/* START white-space.scss */
+$white-space-array: (normal, nowrap, pre, pre-line, pre-wrap, initial, inherit);
+
+/* Each Loop to Generate Classes */
+@each $white-space in $white-space-array {
+
+  .white-space-#{$white-space},
+  .text-#{$white-space} {
+    white-space: #{$white-space};
+  }
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+/* END white-space.scss */

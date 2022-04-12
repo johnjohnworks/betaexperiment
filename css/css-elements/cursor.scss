@@ -1,0 +1,183 @@
+/* cursor.scss */
+@use '../variables';
+
+.cursor-alias,
+.alias {
+  cursor: alias;
+}
+
+.cursor-all-scroll,
+.all-scroll {
+  cursor: all-scroll;
+}
+
+.cursor-auto,
+.auto {
+  cursor: auto;
+}
+
+.cursor-cell,
+.cell {
+  cursor: cell;
+}
+
+.cursor-context-menu,
+.context-menu {
+  cursor: context-menu;
+}
+
+.cursor-col-resize,
+.col-resize {
+  cursor: col-resize;
+}
+
+.cursor-copy,
+.copy {
+  cursor: copy;
+}
+
+.cursor-crosshair,
+.crosshair {
+  cursor: crosshair;
+}
+
+.cursor-default,
+.default {
+  cursor: default;
+}
+
+.cursor-e-resize,
+.e-resize {
+  cursor: e-resize;
+}
+
+.cursor-ew-resize,
+.ew-resize {
+  cursor: ew-resize;
+}
+
+.cursor-grab,
+.grab {
+  cursor: grab;
+}
+
+.cursor-grabbing,
+.grabbing {
+  cursor: grabbing;
+}
+
+.cursor-help,
+.help {
+  cursor: help;
+}
+
+.cursor-move,
+.move {
+  cursor: move;
+}
+
+.n-resize {
+  cursor: n-resize;
+}
+
+.cursor-ne-resize,
+.ne-resize {
+  cursor: ne-resize;
+}
+
+.cursor-newsw-resize,
+.nesw-resize {
+  cursor: nesw-resize;
+}
+
+.cursor-ns-resize,
+.ns-resize {
+  cursor: ns-resize;
+}
+
+.cursor-nw-resize,
+.nw-resize {
+  cursor: nw-resize;
+}
+
+.cursor-nwse-resize,
+.nwse-resize {
+  cursor: nwse-resize;
+}
+
+.cursor-no-drop,
+.no-drop {
+  cursor: no-drop;
+}
+
+.cursor-none,
+.none {
+  cursor: none;
+}
+
+.cursor-not-allowed,
+.not-allowed {
+  cursor: not-allowed;
+}
+
+.cursor-pointer,
+.pointer {
+  cursor: pointer;
+}
+
+.cursor-progress,
+.progress {
+  cursor: progress;
+}
+
+.cursor-row-resize,
+.row-resize {
+  cursor: row-resize;
+}
+
+.cursor-s-resize,
+.s-resize {
+  cursor: s-resize;
+}
+
+.cursor-se-resize,
+.se-resize {
+  cursor: se-resize;
+}
+
+.cursor-sw-resize,
+.sw-resize {
+  cursor: sw-resize;
+}
+
+.cursor-text,
+.text {
+  cursor: text;
+}
+
+.cursor-url {
+  cursor: url(#), auto;
+  /* .cur file required */
+}
+
+.cursor-w-resize,
+.w-resize {
+  cursor: w-resize;
+}
+
+.cursor-wait,
+.wait {
+  cursor: wait;
+}
+
+.cursor-zoom-in,
+.zoom-in {
+  cursor: zoom-in;
+}
+
+.cursor-zoom-out,
+.zoom-out {
+  cursor: zoom-out;
+}
+
+/* END cursor.scss */

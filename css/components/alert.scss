@@ -1,0 +1,21 @@
+/* START alert.scss */
+@import '../variables';
+
+.alert {
+  padding: 1em;
+  border-left-width: thick;
+  border-left-style: solid;
+  color: black;
+  display: block;
+}
+
+@each $color-name,
+$color-value in $colors-array {
+  .alert-#{$color-name} {
+    border-color: #{$color-value};
+    $background-color: rgba($color-value, 0.25);
+    background-color: $background-color;
+  }
+}
+
+/* END alert.scss */

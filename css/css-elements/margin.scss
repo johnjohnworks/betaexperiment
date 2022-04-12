@@ -1,0 +1,65 @@
+@import '../variables';
+
+.margin {
+  margin: $margin;
+}
+
+.margin-top {
+  margin-top: $margin;
+}
+
+.margin-right {
+  margin-right: $margin;
+}
+
+.margin-bottom {
+  margin-bottom: $margin;
+}
+
+.margin-left {
+  margin-right: $margin;
+}
+
+.margin-x {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+.margin-y {
+  margin-top: $margin;
+  margin-bottom: $margin;
+}
+
+/* Each Loop to Generate Classes */
+@each $margin-name,
+$margin in $spacing-units-array {
+  .margin-#{$margin-name} {
+    margin: #{$margin};
+  }
+
+  .margin-x-#{$margin-name} {
+    margin-left: #{$margin};
+    margin-right: #{$margin};
+  }
+
+  .margin-y-#{$margin-name} {
+    margin-top: #{$margin};
+    margin-bottom: #{$margin};
+  }
+
+  .margin-top-#{$margin-name} {
+    margin-top: #{$margin};
+  }
+
+  .margin-right-#{$margin-name} {
+    margin-right: #{$margin};
+  }
+
+  .margin-bottom-#{$margin-name} {
+    margin-bottom: #{$margin};
+  }
+
+  .margin-left-#{$margin-name} {
+    margin-left: #{$margin};
+  }
+}

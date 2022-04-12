@@ -1,0 +1,45 @@
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-color: rgba(128, 128, 128, 0.5);
+  border-spacing: 0;
+  width: 100%;
+}
+
+table caption {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-right: 1.5em;
+  font-size: 75%;
+  text-align: right;
+  caption-side: bottom;
+  color: rgba(128, 128, 128, 0.75);
+}
+
+table thead tr th {
+  color: white;
+}
+
+table th {
+  border: thin solid rgba(128, 128, 128, 0.5);
+  font-weight: bolder;
+  padding: 0.5em 1.5em;
+  text-align: left;
+}
+
+table tr th:first-child {
+  text-align: left;
+}
+
+table td {
+  border: thin solid rgba(128, 128, 128, 0.5);
+  padding: 0.5em 1.5em;
+}
+
+.table-layout-auto {
+  table-layout: auto;
+}
+
+.table-layout-fixed {
+  table-layout: fixed;
+}/*# sourceMappingURL=tables.css.map */

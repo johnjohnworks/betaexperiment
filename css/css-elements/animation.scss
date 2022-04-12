@@ -1,0 +1,29 @@
+/* CSS Document */
+.transition-property-all {
+  transition-property: all;
+}
+
+.transition-timing-function-ease,
+.ease {
+  transition-timing-function: ease;
+}
+
+.transition-timing-function-ease-in,
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.transition-timing-function-ease-in-out,
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.transition-timing-function-ease-out,
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.transition-timing-function-linear,
+.linear {
+  transition-timing-function: linear;
+}

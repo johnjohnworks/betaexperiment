@@ -1,0 +1,17 @@
+/* START clear.scss */
+$clear-array: (none, left, right, both, initial, inherit);
+
+/* Each Loop to Generate Classes */
+@each $clear in $clear-array {
+  .clear-#{$clear} {
+    clear: #{$clear};
+  }
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* END clear.scss */

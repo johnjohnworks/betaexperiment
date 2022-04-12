@@ -1,0 +1,22 @@
+@import '../variables';
+
+/* Edits */
+del,
+.delete,
+.del {
+  text-decoration-line: line-through;
+  color: #575757;
+}
+
+ins,
+.insert,
+.ins {
+  color: $white;
+  text-decoration-line: none;
+}
+
+ins:before,
+.insert:before,
+.ins:before {
+  content: "+ ";
+}

@@ -1,0 +1,19 @@
+@import '../variables';
+
+/* Each Loop to Generate Classes */
+@each $height-name,
+$height in $spacing-units-array {
+  .height-#{$height-name} {
+    height: #{$height};
+  }
+
+  .max-height-#{$height-name},
+  .maxh-#{$height-name} {
+    max-height: #{$height};
+  }
+
+  .min-height-#{$height-name},
+  .minh-#{$height-name} {
+    min-height: #{$height};
+  }
+}

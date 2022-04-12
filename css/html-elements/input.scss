@@ -1,0 +1,13 @@
+/* START input.scss */
+/* Import Variables */
+@import '../variables';
+
+/* Each Loop to Generate Classess */
+@each $color-name,
+$color-value in $colors-array {
+  .input-#{$color-name} {
+    border-color: $color-value;
+  }
+}
+
+/* END input.scss */

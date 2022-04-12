@@ -1,0 +1,9 @@
+::-moz-selection {
+  background-color: blue;
+  color: white;
+}
+
+::selection {
+  background-color: blue;
+  color: white;
+}/*# sourceMappingURL=focus-state.css.map */

@@ -1,0 +1,52 @@
+/* START outline.scss */
+/* Import Variables */
+@import '../variables';
+
+/* Outline Arrays */
+$outline-offsets-array: ("0", "1em"
+);
+$outline-styles-array: ("dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset", "none", "hidden"
+);
+$outline-widths-array: ("thin", "medium", "thick", "0"
+);
+
+/* Outline Color */
+/* Each Loop to Generate Classes */
+@each $color-name,
+$color-value in $colors-array {
+
+  .outline-color-#{$color-name},
+  .outline-#{$color-name} {
+    outline-color: $color-value;
+  }
+}
+
+/* Outline Offset */
+/* Each Loop to Generate Classes */
+@each $outline-offset in $outline-offsets-array {
+  .outline-offset-#{$outline-offset} {
+    outline-offset: $outline-offset;
+  }
+}
+
+/* Outline Style */
+/* Each Loop to Generate Classes */
+@each $outline-style in $outline-styles-array {
+
+  .outline-style-#{$outline-style},
+  .outline-#{$outline-style} {
+    outline-style: $outline-style;
+  }
+}
+
+/* Outline Width */
+/* Each Loop to Generate Classes */
+@each $outline-width in $outline-widths-array {
+
+  .outline-style-#{$outline-width},
+  .outline-#{$outline-width} {
+    outline-style: $outline-width;
+  }
+}
+
+/* END outline.scss */

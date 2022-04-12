@@ -1,0 +1,405 @@
+/* Font Grow Pairs */
+/* Each Loop to Generate Classes */
+.opacity-0 {
+  opacity: calc(0/100);
+}
+
+.opacity-1 {
+  opacity: calc(1/100);
+}
+
+.opacity-2 {
+  opacity: calc(2/100);
+}
+
+.opacity-3 {
+  opacity: calc(3/100);
+}
+
+.opacity-4 {
+  opacity: calc(4/100);
+}
+
+.opacity-5 {
+  opacity: calc(5/100);
+}
+
+.opacity-6 {
+  opacity: calc(6/100);
+}
+
+.opacity-7 {
+  opacity: calc(7/100);
+}
+
+.opacity-8 {
+  opacity: calc(8/100);
+}
+
+.opacity-9 {
+  opacity: calc(9/100);
+}
+
+.opacity-10 {
+  opacity: calc(10/100);
+}
+
+.opacity-11 {
+  opacity: calc(11/100);
+}
+
+.opacity-12 {
+  opacity: calc(12/100);
+}
+
+.opacity-13 {
+  opacity: calc(13/100);
+}
+
+.opacity-14 {
+  opacity: calc(14/100);
+}
+
+.opacity-15 {
+  opacity: calc(15/100);
+}
+
+.opacity-16 {
+  opacity: calc(16/100);
+}
+
+.opacity-17 {
+  opacity: calc(17/100);
+}
+
+.opacity-18 {
+  opacity: calc(18/100);
+}
+
+.opacity-19 {
+  opacity: calc(19/100);
+}
+
+.opacity-20 {
+  opacity: calc(20/100);
+}
+
+.opacity-21 {
+  opacity: calc(21/100);
+}
+
+.opacity-22 {
+  opacity: calc(22/100);
+}
+
+.opacity-23 {
+  opacity: calc(23/100);
+}
+
+.opacity-24 {
+  opacity: calc(24/100);
+}
+
+.opacity-25 {
+  opacity: calc(25/100);
+}
+
+.opacity-26 {
+  opacity: calc(26/100);
+}
+
+.opacity-27 {
+  opacity: calc(27/100);
+}
+
+.opacity-28 {
+  opacity: calc(28/100);
+}
+
+.opacity-29 {
+  opacity: calc(29/100);
+}
+
+.opacity-30 {
+  opacity: calc(30/100);
+}
+
+.opacity-31 {
+  opacity: calc(31/100);
+}
+
+.opacity-32 {
+  opacity: calc(32/100);
+}
+
+.opacity-33 {
+  opacity: calc(33/100);
+}
+
+.opacity-34 {
+  opacity: calc(34/100);
+}
+
+.opacity-35 {
+  opacity: calc(35/100);
+}
+
+.opacity-36 {
+  opacity: calc(36/100);
+}
+
+.opacity-37 {
+  opacity: calc(37/100);
+}
+
+.opacity-38 {
+  opacity: calc(38/100);
+}
+
+.opacity-39 {
+  opacity: calc(39/100);
+}
+
+.opacity-40 {
+  opacity: calc(40/100);
+}
+
+.opacity-41 {
+  opacity: calc(41/100);
+}
+
+.opacity-42 {
+  opacity: calc(42/100);
+}
+
+.opacity-43 {
+  opacity: calc(43/100);
+}
+
+.opacity-44 {
+  opacity: calc(44/100);
+}
+
+.opacity-45 {
+  opacity: calc(45/100);
+}
+
+.opacity-46 {
+  opacity: calc(46/100);
+}
+
+.opacity-47 {
+  opacity: calc(47/100);
+}
+
+.opacity-48 {
+  opacity: calc(48/100);
+}
+
+.opacity-49 {
+  opacity: calc(49/100);
+}
+
+.opacity-50 {
+  opacity: calc(50/100);
+}
+
+.opacity-51 {
+  opacity: calc(51/100);
+}
+
+.opacity-52 {
+  opacity: calc(52/100);
+}
+
+.opacity-53 {
+  opacity: calc(53/100);
+}
+
+.opacity-54 {
+  opacity: calc(54/100);
+}
+
+.opacity-55 {
+  opacity: calc(55/100);
+}
+
+.opacity-56 {
+  opacity: calc(56/100);
+}
+
+.opacity-57 {
+  opacity: calc(57/100);
+}
+
+.opacity-58 {
+  opacity: calc(58/100);
+}
+
+.opacity-59 {
+  opacity: calc(59/100);
+}
+
+.opacity-60 {
+  opacity: calc(60/100);
+}
+
+.opacity-61 {
+  opacity: calc(61/100);
+}
+
+.opacity-62 {
+  opacity: calc(62/100);
+}
+
+.opacity-63 {
+  opacity: calc(63/100);
+}
+
+.opacity-64 {
+  opacity: calc(64/100);
+}
+
+.opacity-65 {
+  opacity: calc(65/100);
+}
+
+.opacity-66 {
+  opacity: calc(66/100);
+}
+
+.opacity-67 {
+  opacity: calc(67/100);
+}
+
+.opacity-68 {
+  opacity: calc(68/100);
+}
+
+.opacity-69 {
+  opacity: calc(69/100);
+}
+
+.opacity-70 {
+  opacity: calc(70/100);
+}
+
+.opacity-71 {
+  opacity: calc(71/100);
+}
+
+.opacity-72 {
+  opacity: calc(72/100);
+}
+
+.opacity-73 {
+  opacity: calc(73/100);
+}
+
+.opacity-74 {
+  opacity: calc(74/100);
+}
+
+.opacity-75 {
+  opacity: calc(75/100);
+}
+
+.opacity-76 {
+  opacity: calc(76/100);
+}
+
+.opacity-77 {
+  opacity: calc(77/100);
+}
+
+.opacity-78 {
+  opacity: calc(78/100);
+}
+
+.opacity-79 {
+  opacity: calc(79/100);
+}
+
+.opacity-80 {
+  opacity: calc(80/100);
+}
+
+.opacity-81 {
+  opacity: calc(81/100);
+}
+
+.opacity-82 {
+  opacity: calc(82/100);
+}
+
+.opacity-83 {
+  opacity: calc(83/100);
+}
+
+.opacity-84 {
+  opacity: calc(84/100);
+}
+
+.opacity-85 {
+  opacity: calc(85/100);
+}
+
+.opacity-86 {
+  opacity: calc(86/100);
+}
+
+.opacity-87 {
+  opacity: calc(87/100);
+}
+
+.opacity-88 {
+  opacity: calc(88/100);
+}
+
+.opacity-89 {
+  opacity: calc(89/100);
+}
+
+.opacity-90 {
+  opacity: calc(90/100);
+}
+
+.opacity-91 {
+  opacity: calc(91/100);
+}
+
+.opacity-92 {
+  opacity: calc(92/100);
+}
+
+.opacity-93 {
+  opacity: calc(93/100);
+}
+
+.opacity-94 {
+  opacity: calc(94/100);
+}
+
+.opacity-95 {
+  opacity: calc(95/100);
+}
+
+.opacity-96 {
+  opacity: calc(96/100);
+}
+
+.opacity-97 {
+  opacity: calc(97/100);
+}
+
+.opacity-98 {
+  opacity: calc(98/100);
+}
+
+.opacity-99 {
+  opacity: calc(99/100);
+}
+
+.opacity-100 {
+  opacity: calc(100/100);
+}/*# sourceMappingURL=opacity.css.map */

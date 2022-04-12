@@ -1,0 +1,28 @@
+details > summary {
+  color: #7ab1ff;
+  text-decoration: underline;
+  min-height: 2.75em;
+  line-height: 2.75em;
+  transition: background-color ease 1s, border-color ease 1s, padding-left ease 1s, outline ease 1s, color ease 1s;
+}
+
+details > summary:focus {
+  background-color: #7ab1ff;
+  border-color: #7ab1ff;
+  color: black;
+  padding-left: 1em;
+  outline: thin solid #7ab1ff;
+}
+
+details > summary:active {
+  background-color: white;
+  color: black;
+  padding-left: 1em;
+}
+
+details > summary:hover {
+  background-color: #1E2C40;
+  color: white;
+  cursor: pointer;
+  padding-left: 1em;
+}/*# sourceMappingURL=interactive-elements.css.map */

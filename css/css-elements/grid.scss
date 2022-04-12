@@ -1,0 +1,132 @@
+$number-of-columns: 12;
+
+.grid-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 80em;
+}
+
+.grid-row {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-wrap: wrap !important;
+  flex-wrap: wrap !important
+}
+
+[class*=grid-col] {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid-col {
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 0 0px !important;
+  flex: 1 0 0 !important;
+}
+
+.grid-col,
+.grid-col-auto {
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+/* For Loop to Generate Classes */
+@for $i from 1 through $number-of-columns {
+
+  .grid-col-#{$i},
+  .col-#{$i} {
+    width: calc($i / $number-of-columns);
+  }
+}
+
+/* Mobile First */
+@media only screen and (max-device-width: 30em) {
+  .m-grid-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .m-grid-row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important
+  }
+
+  @for $i from 1 through $number-of-columns {
+
+    .m-grid-col-#{$i},
+    .col-xs-#{$i} {
+      width: calc($i / $number-of-columns);
+    }
+  }
+}
+
+/* Tablet */
+@media only screen and (min-device-width:30em) and (max-device-width:85em) {
+  .t-grid-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .t-grid-row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important
+  }
+
+  @for $i from 1 through $number-of-columns {
+
+    .t-grid-col-#{$i},
+    .col-sm-#{$i} {
+      width: calc($i / $number-of-columns);
+    }
+  }
+}
+
+/* Desktop */
+@media only screen and (min-device-width:85em) {
+  .d-grid-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .d-grid-row {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important
+  }
+
+  @for $i from 1 through $number-of-columns {
+
+    .d-grid-col-#{$i},
+    .col-lg-#{$i} {
+      width: calc($i / $number-of-columns);
+    }
+  }
+}
+
+/* Print */
+@media print {
+  @for $i from 1 through $number-of-columns {
+    .p-grid-col-#{$i} {
+      width: calc($i / $number-of-columns);
+    }
+  }
+}

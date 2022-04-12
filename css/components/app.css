@@ -1,0 +1,142 @@
+/* START _app.scss */
+/* Mobile First */
+@media screen {
+  .app {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .app header {
+    background-color: #3b3b3b;
+  }
+
+  .app header a.brand {
+    text-decoration: none;
+  }
+
+  .app header a.brand img {
+    vertical-align: middle;
+  }
+
+  .app > main {
+    flex: auto;
+    max-height: 100%;
+    overflow: hidden;
+    background-color: #262626;
+  }
+
+  .app > main > section {
+    overflow: auto;
+  }
+
+  header {
+    min-height: 5.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-top: thin solid rgba(255, 255, 255, 0.25);
+    line-height: 2.75em;
+  }
+
+  .page {
+    padding: 1.375em;
+  }
+}
+/* Tablet & Desktop */
+@media screen and (min-width: 40em) {
+  .app header {
+    align-items: center;
+    gap: 1.375em;
+    align-content: space-between;
+    padding-right: 1.75em;
+  }
+
+  .app header nav {
+    display: inline-block;
+    flex: auto;
+  }
+
+  .app header nav a.brand {
+    display: inline-block;
+    padding: 1.375em;
+  }
+
+  .app header nav .tab {
+    padding-top: 2em;
+    padding-bottom: 1.75em;
+  }
+
+  .app header button {
+    margin: 1.375em;
+  }
+
+  .app > main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  aside {
+    max-height: 100%;
+  }
+
+  aside nav {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+  }
+
+  aside nav a {
+    display: block;
+    border: 0 none;
+    border-left: 0.25em solid rgba(255, 255, 255, 0.25);
+    padding: 0.8125em;
+    white-space: nowrap;
+  }
+
+  aside nav a:hover,
+aside nav a.hover {
+    color: cyan;
+    border-left-color: cyan;
+    text-decoration: none;
+    background-color: #1E2C40;
+    outline: 0px none transparent !important;
+  }
+
+  aside nav a.active-tab {
+    color: white;
+    border-left-color: white;
+    text-decoration: none;
+    background-color: #3b3b3b;
+    outline: 0px none transparent !important;
+  }
+
+  aside nav a.disabled:hover {
+    border-left-color: rgba(255, 255, 255, 0.25);
+  }
+
+  .page {
+    padding: 4em 5em;
+  }
+}
+/* Print */
+@media print {
+  .app aside {
+    display: none;
+  }
+}
+/* END _app.scss *//*# sourceMappingURL=app.css.map */

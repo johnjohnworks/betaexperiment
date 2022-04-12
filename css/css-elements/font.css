@@ -1,0 +1,905 @@
+.font-family-serif,
+.font-serif,
+.serif {
+  font-family: serif;
+}
+
+.font-family-sans-serif,
+.font-family-sans,
+.font-sans-serif,
+.font-sans,
+.sans-serif,
+.sans {
+  font-family: sans-serif;
+}
+
+.font-family-monospace,
+.font-family-mono,
+.font-monospace,
+.font-mono .monospace {
+  font-family: monospace;
+}
+
+.font-family-cursive,
+.font-cursive .cursive {
+  font-family: cursive;
+}
+
+.font-family-fantasy,
+.fantasy {
+  font-family: fantasy;
+}
+
+.font-family-system-ui,
+.system-ui {
+  font-family: system-ui;
+}
+
+.font-family-emoji,
+.emoji {
+  font-family: emoji;
+}
+
+.font-family-math,
+.math {
+  font-family: math;
+}
+
+.font-family-fangsong,
+.fangsong {
+  font-family: fangsong;
+}
+
+.font-family-alt,
+.font-alt {
+  font-family: sans-serif;
+}
+
+.font-family-body,
+.font-body {
+  font-family: inherit;
+}
+
+.font-family-code,
+.font-code {
+  font-family: monospace;
+}
+
+.font-family-heading,
+.font-heading {
+  font-family: inherit;
+}
+
+.font-family-ui,
+.font-ui {
+  font-family: system-ui;
+}
+
+/* Font Size */
+/* Each Loop to Generate Classes */
+.font-size-xx-small,
+.font-xx-small,
+.xx-small {
+  font-size: xx-small;
+}
+
+.font-size-x-small,
+.font-x-small,
+.x-small {
+  font-size: x-small;
+}
+
+.font-size-small,
+.font-small,
+.small {
+  font-size: small;
+}
+
+.font-size-medium,
+.font-medium,
+.medium {
+  font-size: medium;
+}
+
+.font-size-large,
+.font-large,
+.large {
+  font-size: large;
+}
+
+.font-size-x-large,
+.font-x-large,
+.x-large {
+  font-size: x-large;
+}
+
+.font-size-xx-large,
+.font-xx-large,
+.xx-large {
+  font-size: xx-large;
+}
+
+.font-size-smaller,
+.font-smaller,
+.smaller {
+  font-size: smaller;
+}
+
+.font-size-larger,
+.font-larger,
+.larger {
+  font-size: larger;
+}
+
+.font-size-inherit,
+.font-inherit,
+.inherit {
+  font-size: inherit;
+}
+
+.font-size-inititial,
+.font-inititial,
+.inititial {
+  font-size: inititial;
+}
+
+/* Font Size Named Pairs */
+/* Each Loop to Generate Classes */
+.font-size-25,
+.font-25 {
+  font-size: 25%;
+}
+
+.font-size-33,
+.font-33 {
+  font-size: 33%;
+}
+
+.font-size-50,
+.font-50 {
+  font-size: 50%;
+}
+
+.font-size-67,
+.font-67 {
+  font-size: 67%;
+}
+
+.font-size-75,
+.font-75 {
+  font-size: 75%;
+}
+
+.font-size-80,
+.font-80 {
+  font-size: 80%;
+}
+
+.font-size-x2,
+.font-x2 {
+  font-size: 200%;
+}
+
+.font-size-x3,
+.font-x3 {
+  font-size: 300%;
+}
+
+.font-size-x4,
+.font-x4 {
+  font-size: 400%;
+}
+
+.font-size-x5,
+.font-x5 {
+  font-size: 500%;
+}
+
+.font-size-mono-3xs,
+.font-mono-3xs {
+  font-size: calc(12.4/16*100%);
+}
+
+.font-size-mono-2xs,
+.font-mono-2xs {
+  font-size: calc(13.3/16*100%);
+}
+
+.font-size-mono-xs,
+.font-mono-xs {
+  font-size: calc(14.3/16*100%);
+}
+
+.font-size-mono-sm,
+.font-mono-sm {
+  font-size: calc(15.2/16*100%);
+}
+
+.font-size-mono-md,
+.font-mono-md {
+  font-size: calc(16.2/16*100%);
+}
+
+.font-size-mono-lg,
+.font-mono-lg {
+  font-size: calc(21.0/16*100%);
+}
+
+.font-size-mono-xl,
+.font-mono-xl {
+  font-size: calc(30.5/16*100%);
+}
+
+.font-size-mono-2xl,
+.font-mono-2xl {
+  font-size: calc(38.1/16*100%);
+}
+
+.font-size-mono-3xl,
+.font-mono-3xl {
+  font-size: calc(45.7/16*100%);
+}
+
+.font-size-sans-3xs,
+.font-sans-3xs {
+  font-size: calc(13.8/16*100%);
+}
+
+.font-size-sans-2xs,
+.font-sans-2xs {
+  font-size: calc(14.9/16*100%);
+}
+
+.font-size-sans-xs,
+.font-sans-xs {
+  font-size: calc(16.0/16*100%);
+}
+
+.font-size-sans-sm,
+.font-sans-sm {
+  font-size: calc(17.0/16*100%);
+}
+
+.font-size-sans-md,
+.font-sans-md {
+  font-size: calc(18.1/16*100%);
+}
+
+.font-size-sans-lg,
+.font-sans-lg {
+  font-size: calc(23.4/16*100%);
+}
+
+.font-size-sans-xl,
+.font-sans-xl {
+  font-size: calc(34.1/16*100%);
+}
+
+.font-size-sans-2xl,
+.font-sans-2xl {
+  font-size: calc(42.6/16*100%);
+}
+
+.font-size-sans-3xl,
+.font-sans-3xl {
+  font-size: calc(51.1/16*100%);
+}
+
+.font-size-serif-3xs,
+.font-serif-3xs {
+  font-size: calc(12.7/16*100%);
+}
+
+.font-size-serif-2xs,
+.font-serif-2xs {
+  font-size: calc(13.7/16*100%);
+}
+
+.font-size-serif-xs,
+.font-serif-xs {
+  font-size: calc(14.6/16*100%);
+}
+
+.font-size-serif-sm,
+.font-serif-sm {
+  font-size: calc(15.6/16*100%);
+}
+
+.font-size-serif-md,
+.font-serif-md {
+  font-size: calc(16.6/16*100%);
+}
+
+.font-size-serif-lg,
+.font-serif-lg {
+  font-size: calc(21.5/16*100%);
+}
+
+.font-size-serif-xl,
+.font-serif-xl {
+  font-size: calc(31.2/16*100%);
+}
+
+.font-size-serif-2xl,
+.font-serif-2xl {
+  font-size: calc(39.0/16*100%);
+}
+
+.font-size-serif-3xl,
+.font-serif-3xl {
+  font-size: calc(46.8/16*100%);
+}
+
+.font-size-alt-3xs,
+.font-alt-3xs {
+  font-size: calc(12.7/16*100%);
+}
+
+.font-size-alt-2xs,
+.font-alt-2xs {
+  font-size: calc(13.7/16*100%);
+}
+
+.font-size-alt-xs,
+.font-alt-xs {
+  font-size: calc(14.6/16*100%);
+}
+
+.font-size-alt-sm,
+.font-alt-sm {
+  font-size: calc(15.6/16*100%);
+}
+
+.font-size-alt-md,
+.font-alt-md {
+  font-size: calc(16.6/16*100%);
+}
+
+.font-size-alt-lg,
+.font-alt-lg {
+  font-size: calc(21.5/16*100%);
+}
+
+.font-size-alt-xl,
+.font-alt-xl {
+  font-size: calc(31.2/16*100%);
+}
+
+.font-size-alt-2xl,
+.font-alt-2xl {
+  font-size: calc(39.0/16*100%);
+}
+
+.font-size-alt-3xl,
+.font-alt-3xl {
+  font-size: calc(46.8/16*100%);
+}
+
+.font-size-body-3xs,
+.font-body-3xs {
+  font-size: calc(13.8/16*100%);
+}
+
+.font-size-body-2xs,
+.font-body-2xs {
+  font-size: calc(14.9/16*100%);
+}
+
+.font-size-body-xs,
+.font-body-xs {
+  font-size: calc(16.0/16*100%);
+}
+
+.font-size-body-sm,
+.font-body-sm {
+  font-size: calc(17.0/16*100%);
+}
+
+.font-size-body-md,
+.font-body-md {
+  font-size: calc(18.1/16*100%);
+}
+
+.font-size-body-lg,
+.font-body-lg {
+  font-size: calc(23.4/16*100%);
+}
+
+.font-size-body-xl,
+.font-body-xl {
+  font-size: calc(34.1/16*100%);
+}
+
+.font-size-body-2xl,
+.font-body-2xl {
+  font-size: calc(42.6/16*100%);
+}
+
+.font-size-body-3xl,
+.font-body-3xl {
+  font-size: calc(51.1/16*100%);
+}
+
+.font-size-code-3xs,
+.font-code-3xs {
+  font-size: calc(12.4/16*100%);
+}
+
+.font-size-code-2xs,
+.font-code-2xs {
+  font-size: calc(13.3/16*100%);
+}
+
+.font-size-code-xs,
+.font-code-xs {
+  font-size: calc(14.3/16*100%);
+}
+
+.font-size-code-sm,
+.font-code-sm {
+  font-size: calc(15.2/16*100%);
+}
+
+.font-size-code-md,
+.font-code-md {
+  font-size: calc(16.2/16*100%);
+}
+
+.font-size-code-lg,
+.font-code-lg {
+  font-size: calc(21.0/16*100%);
+}
+
+.font-size-code-xl,
+.font-code-xl {
+  font-size: calc(30.5/16*100%);
+}
+
+.font-size-code-2xl,
+.font-code-2xl {
+  font-size: calc(38.1/16*100%);
+}
+
+.font-size-code-3xl,
+.font-code-3xl {
+  font-size: calc(45.7/16*100%);
+}
+
+.font-size-heading-3xs,
+.font-heading-3xs {
+  font-size: calc(12.7/16*100%);
+}
+
+.font-size-heading-2xs,
+.font-heading-2xs {
+  font-size: calc(13.7/16*100%);
+}
+
+.font-size-heading-xs,
+.font-heading-xs {
+  font-size: calc(14.6/16*100%);
+}
+
+.font-size-heading-sm,
+.font-heading-sm {
+  font-size: calc(15.6/16*100%);
+}
+
+.font-size-heading-md,
+.font-heading-md {
+  font-size: calc(16.6/16*100%);
+}
+
+.font-size-heading-lg,
+.font-heading-lg {
+  font-size: calc(21.5/16*100%);
+}
+
+.font-size-heading-xl,
+.font-heading-xl {
+  font-size: calc(31.2/16*100%);
+}
+
+.font-size-heading-2xl,
+.font-heading-2xl {
+  font-size: calc(39.0/16*100%);
+}
+
+.font-size-heading-3xl,
+.font-heading-3xl {
+  font-size: calc(46.8/16*100%);
+}
+
+.font-size-ui-3xs,
+.font-ui-3xs {
+  font-size: calc(13.8/16*100%);
+}
+
+.font-size-ui-2xs,
+.font-ui-2xs {
+  font-size: calc(14.9/16*100%);
+}
+
+.font-size-ui-xs,
+.font-ui-xs {
+  font-size: calc(16.0/16*100%);
+}
+
+.font-size-ui-sm,
+.font-ui-sm {
+  font-size: calc(17.0/16*100%);
+}
+
+.font-size-ui-md,
+.font-ui-md {
+  font-size: calc(18.1/16*100%);
+}
+
+.font-size-ui-lg,
+.font-ui-lg {
+  font-size: calc(23.4/16*100%);
+}
+
+.font-size-ui-xl,
+.font-ui-xl {
+  font-size: calc(34.1/16*100%);
+}
+
+.font-size-ui-2xl,
+.font-ui-2xl {
+  font-size: calc(42.6/16*100%);
+}
+
+.font-size-ui-3xl,
+.font-ui-3xl {
+  font-size: calc(51.1/16*100%);
+}
+
+/* Font Stretch */
+.font-stretch-ultra-condensed,
+.ultra-condensed {
+  font-stretch: ultra-condensed;
+}
+
+.font-stretch-extra-condensed,
+.extra-condensed {
+  font-stretch: extra-condensed;
+}
+
+.font-stretch-condensed,
+.condensed {
+  font-stretch: condensed;
+}
+
+.font-stretch-semi-condensed,
+.semi-condensed {
+  font-stretch: semi-condensed;
+}
+
+.font-stretch-normal,
+.normal {
+  font-stretch: normal;
+}
+
+.font-stretch-semi-expanded,
+.semi-expanded {
+  font-stretch: semi-expanded;
+}
+
+.font-stretch-expanded,
+.expanded {
+  font-stretch: expanded;
+}
+
+.font-stretch-extra-expanded,
+.extra-expanded {
+  font-stretch: extra-expanded;
+}
+
+.font-stretch-ultra-expanded,
+.ultra-expanded {
+  font-stretch: ultra-expanded;
+}
+
+/* Font Style */
+.font-style-normal,
+.normal {
+  font-style: normal;
+}
+
+.font-style-italic,
+.italic {
+  font-style: italic;
+}
+
+.font-style-oblique,
+.oblique {
+  font-style: oblique;
+}
+
+/* Font Variant */
+.font-variant-normal,
+.normal {
+  font-variant: normal;
+}
+
+.font-variant-small-caps,
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Font Weight */
+/* Each Loop to Generate Classes */
+.font-weight-100,
+.font-100,
+.text-100 {
+  font-weight: 100;
+}
+
+.font-weight-200,
+.font-200,
+.text-200 {
+  font-weight: 200;
+}
+
+.font-weight-300,
+.font-300,
+.text-300 {
+  font-weight: 300;
+}
+
+.font-weight-400,
+.font-400,
+.text-400 {
+  font-weight: 400;
+}
+
+.font-weight-500,
+.font-500,
+.text-500 {
+  font-weight: 500;
+}
+
+.font-weight-600,
+.font-600,
+.text-600 {
+  font-weight: 600;
+}
+
+.font-weight-700,
+.font-700,
+.text-700 {
+  font-weight: 700;
+}
+
+.font-weight-800,
+.font-800,
+.text-800 {
+  font-weight: 800;
+}
+
+.font-weight-900,
+.font-900,
+.text-900 {
+  font-weight: 900;
+}
+
+/* Font Weight Pairs */
+/* Each Loop to Generate Classes */
+.font-weight-thin,
+.font-thin,
+.text-thin,
+.thin {
+  font-weight: 100;
+}
+
+.font-weight-light,
+.font-light,
+.text-light,
+.light {
+  font-weight: 300;
+}
+
+.font-weight-lighter,
+.font-lighter,
+.text-lighter,
+.lighter {
+  font-weight: lighter;
+}
+
+.font-weight-medium,
+.font-medium,
+.text-medium,
+.medium {
+  font-weight: 500;
+}
+
+.font-weight-semibold,
+.font-semibold,
+.text-semibold,
+.semibold {
+  font-weight: 600;
+}
+
+.font-weight-bold,
+.font-bold,
+.text-bold,
+.bold {
+  font-weight: bold;
+}
+
+.font-weight-bolder,
+.font-bolder,
+.text-bolder,
+.bolder {
+  font-weight: bolder;
+}
+
+.font-weight-heavy,
+.font-heavy,
+.text-heavy,
+.heavy {
+  font-weight: 900;
+}
+
+.font-weight-normal,
+.font-normal,
+.text-normal,
+.normal {
+  font-weight: normal;
+}
+
+.font-weight-inherit,
+.font-inherit,
+.text-inherit,
+.inherit {
+  font-weight: inherit;
+}
+
+.font-weight-initial,
+.font-initial,
+.text-initial,
+.initial {
+  font-weight: initial;
+}
+
+/* Font Families */
+/* Each Loop to Generate Classes */
+.font-family-serif,
+.font-serif {
+  font-family: serif;
+}
+
+.font-family-sans-serif,
+.font-sans-serif {
+  font-family: sans-serif;
+}
+
+.font-family-cursive,
+.font-cursive {
+  font-family: cursive;
+}
+
+.font-family-fantasy,
+.font-fantasy {
+  font-family: fantasy;
+}
+
+.font-family-monospace,
+.font-monospace {
+  font-family: monospace;
+}
+
+.font-family-inherit,
+.font-inherit {
+  font-family: inherit;
+}
+
+.font-family-initial,
+.font-initial {
+  font-family: initial;
+}
+
+/* Each Loop to Generate Classes */
+.font-family-Georgia,
+.font-Georgia {
+  font-family: "$font-family", inherit;
+}
+
+.font-family-Helvetica,
+.font-Helvetica {
+  font-family: "$font-family", inherit;
+}
+
+.font-family-Merriweather,
+.font-Merriweather {
+  font-family: "$font-family", inherit;
+}
+
+.font-family-Tahoma,
+.font-Tahoma {
+  font-family: "$font-family", inherit;
+}
+
+.font-family-Verdana,
+.font-Verdana {
+  font-family: "$font-family", inherit;
+}
+
+.font-family-Arial,
+.font-Arial {
+  font-family: "$font-family", inherit;
+}
+
+/* Fonts with Spaces in them */
+.font-family-open-sans,
+.font-open-sans {
+  font-family: "Open Sans", inherit;
+}
+
+.font-family-public-sans,
+.font-public-sans {
+  font-family: "Public Sans", inherit;
+}
+
+.font-family-roboto-mono,
+.font-roboto-mono {
+  font-family: "Roboto Mono", inherit;
+}
+
+.font-family-source-sans-pro,
+.font-source-sans-pro {
+  font-family: "Source Sans Pro", inherit;
+}
+
+/* Letter Spacing Pairs */
+/* Each Loop to Generate Classes */
+.letter-spacing-neg-3,
+.text-ls-neg-3 {
+  letter-spacing: -0.03em;
+}
+
+.letter-spacing-neg-2,
+.text-ls-neg-2 {
+  letter-spacing: -0.02em;
+}
+
+.letter-spacing-neg-1,
+.text-ls-neg-1 {
+  letter-spacing: -0.01em;
+}
+
+.letter-spacing-auto,
+.text-ls-auto {
+  letter-spacing: initial;
+}
+
+.letter-spacing-1,
+.text-ls-1 {
+  letter-spacing: 0.05em;
+}
+
+.letter-spacing-2,
+.text-ls-2 {
+  letter-spacing: 0.1em;
+}
+
+.letter-spacing-3,
+.text-ls-3 {
+  letter-spacing: 0.15em;
+}
+
+.letter-spacing-normal,
+.text-ls-normal {
+  letter-spacing: normal;
+}
+
+.letter-spacing-inherit,
+.text-ls-inherit {
+  letter-spacing: inherit;
+}
+
+.letter-spacing-initial,
+.text-ls-initial {
+  letter-spacing: initial;
+}/*# sourceMappingURL=font.css.map */

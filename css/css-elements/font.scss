@@ -1,0 +1,380 @@
+@use '../variables';
+
+.font-family-serif,
+.font-serif,
+.serif {
+  font-family: serif;
+}
+
+.font-family-sans-serif,
+.font-family-sans,
+.font-sans-serif,
+.font-sans,
+.sans-serif,
+.sans {
+  font-family: sans-serif;
+}
+
+.font-family-monospace,
+.font-family-mono,
+.font-monospace,
+.font-mono .monospace {
+  font-family: monospace;
+}
+
+.font-family-cursive,
+.font-cursive .cursive {
+  font-family: cursive;
+}
+
+.font-family-fantasy,
+.fantasy {
+  font-family: fantasy;
+}
+
+.font-family-system-ui,
+.system-ui {
+  font-family: system-ui;
+}
+
+.font-family-emoji,
+.emoji {
+  font-family: emoji;
+}
+
+.font-family-math,
+.math {
+  font-family: math;
+}
+
+.font-family-fangsong,
+.fangsong {
+  font-family: fangsong;
+}
+
+.font-family-alt,
+.font-alt {
+  font-family: sans-serif;
+}
+
+.font-family-body,
+.font-body {
+  font-family: inherit;
+}
+
+.font-family-code,
+.font-code {
+  font-family: monospace;
+}
+
+.font-family-heading,
+.font-heading {
+  font-family: inherit;
+}
+
+.font-family-ui,
+.font-ui {
+  font-family: system-ui;
+}
+
+/* Font Size */
+$font-sizes-array: ("xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large", "smaller", "larger", "inherit", "inititial"
+);
+
+/* Each Loop to Generate Classes */
+@each $font-size in $font-sizes-array {
+
+  .font-size-#{$font-size},
+  .font-#{$font-size},
+  .#{$font-size} {
+    font-size: #{$font-size};
+  }
+}
+
+/* Font Size Named Pairs */
+$font-size-pairs-array: ("25" : "25%",
+  "33" : "33%",
+  "50" : "50%",
+  "67" : "67%",
+  "75" : "75%",
+  "80" : "80%",
+  "x2" : "200%",
+  "x3" : "300%",
+  "x4" : "400%",
+  "x5" : "500%",
+
+  "mono-3xs" : "calc(12.4/16*100%)",
+  "mono-2xs" : "calc(13.3/16*100%)",
+  "mono-xs" : "calc(14.3/16*100%)",
+  "mono-sm" : "calc(15.2/16*100%)",
+  "mono-md" : "calc(16.2/16*100%)",
+  "mono-lg" : "calc(21.0/16*100%)",
+  "mono-xl" : "calc(30.5/16*100%)",
+  "mono-2xl" : "calc(38.1/16*100%)",
+  "mono-3xl" : "calc(45.7/16*100%)",
+
+  "sans-3xs" : "calc(13.8/16*100%)",
+  "sans-2xs" : "calc(14.9/16*100%)",
+  "sans-xs" : "calc(16.0/16*100%)",
+  "sans-sm" : "calc(17.0/16*100%)",
+  "sans-md" : "calc(18.1/16*100%)",
+  "sans-lg" : "calc(23.4/16*100%)",
+  "sans-xl" : "calc(34.1/16*100%)",
+  "sans-2xl" : "calc(42.6/16*100%)",
+  "sans-3xl" : "calc(51.1/16*100%)",
+
+  "serif-3xs" : "calc(12.7/16*100%)",
+  "serif-2xs" : "calc(13.7/16*100%)",
+  "serif-xs" : "calc(14.6/16*100%)",
+  "serif-sm" : "calc(15.6/16*100%)",
+  "serif-md" : "calc(16.6/16*100%)",
+  "serif-lg" : "calc(21.5/16*100%)",
+  "serif-xl" : "calc(31.2/16*100%)",
+  "serif-2xl" : "calc(39.0/16*100%)",
+  "serif-3xl" : "calc(46.8/16*100%)",
+
+  "alt-3xs" : "calc(12.7/16*100%)",
+  "alt-2xs" : "calc(13.7/16*100%)",
+  "alt-xs" : "calc(14.6/16*100%)",
+  "alt-sm" : "calc(15.6/16*100%)",
+  "alt-md" : "calc(16.6/16*100%)",
+  "alt-lg" : "calc(21.5/16*100%)",
+  "alt-xl" : "calc(31.2/16*100%)",
+  "alt-2xl" : "calc(39.0/16*100%)",
+  "alt-3xl" : "calc(46.8/16*100%)",
+
+  "body-3xs" : "calc(13.8/16*100%)",
+  "body-2xs" : "calc(14.9/16*100%)",
+  "body-xs" : "calc(16.0/16*100%)",
+  "body-sm" : "calc(17.0/16*100%)",
+  "body-md" : "calc(18.1/16*100%)",
+  "body-lg" : "calc(23.4/16*100%)",
+  "body-xl" : "calc(34.1/16*100%)",
+  "body-2xl" : "calc(42.6/16*100%)",
+  "body-3xl" : "calc(51.1/16*100%)",
+
+  "code-3xs" : "calc(12.4/16*100%)",
+  "code-2xs" : "calc(13.3/16*100%)",
+  "code-xs" : "calc(14.3/16*100%)",
+  "code-sm" : "calc(15.2/16*100%)",
+  "code-md" : "calc(16.2/16*100%)",
+  "code-lg" : "calc(21.0/16*100%)",
+  "code-xl" : "calc(30.5/16*100%)",
+  "code-2xl" : "calc(38.1/16*100%)",
+  "code-3xl" : "calc(45.7/16*100%)",
+
+  "heading-3xs" : "calc(12.7/16*100%)",
+  "heading-2xs" : "calc(13.7/16*100%)",
+  "heading-xs" : "calc(14.6/16*100%)",
+  "heading-sm" : "calc(15.6/16*100%)",
+  "heading-md" : "calc(16.6/16*100%)",
+  "heading-lg" : "calc(21.5/16*100%)",
+  "heading-xl" : "calc(31.2/16*100%)",
+  "heading-2xl" : "calc(39.0/16*100%)",
+  "heading-3xl" : "calc(46.8/16*100%)",
+
+  "ui-3xs" : "calc(13.8/16*100%)",
+  "ui-2xs" : "calc(14.9/16*100%)",
+  "ui-xs" : "calc(16.0/16*100%)",
+  "ui-sm" : "calc(17.0/16*100%)",
+  "ui-md" : "calc(18.1/16*100%)",
+  "ui-lg" : "calc(23.4/16*100%)",
+  "ui-xl" : "calc(34.1/16*100%)",
+  "ui-2xl" : "calc(42.6/16*100%)",
+  "ui-3xl" : "calc(51.1/16*100%)",
+);
+
+/* Each Loop to Generate Classes */
+@each $font-size-name,
+$font-size in $font-size-pairs-array {
+
+  .font-size-#{$font-size-name},
+  .font-#{$font-size-name} {
+    font-size: #{$font-size};
+  }
+}
+
+/* Font Stretch */
+.font-stretch-ultra-condensed,
+.ultra-condensed {
+  font-stretch: ultra-condensed;
+}
+
+.font-stretch-extra-condensed,
+.extra-condensed {
+  font-stretch: extra-condensed;
+}
+
+.font-stretch-condensed,
+.condensed {
+  font-stretch: condensed;
+}
+
+.font-stretch-semi-condensed,
+.semi-condensed {
+  font-stretch: semi-condensed;
+}
+
+.font-stretch-normal,
+.normal {
+  font-stretch: normal;
+}
+
+.font-stretch-semi-expanded,
+.semi-expanded {
+  font-stretch: semi-expanded;
+}
+
+.font-stretch-expanded,
+.expanded {
+  font-stretch: expanded;
+}
+
+.font-stretch-extra-expanded,
+.extra-expanded {
+  font-stretch: extra-expanded;
+}
+
+.font-stretch-ultra-expanded,
+.ultra-expanded {
+  font-stretch: ultra-expanded;
+}
+
+/* Font Style */
+.font-style-normal,
+.normal {
+  font-style: normal;
+}
+
+.font-style-italic,
+.italic {
+  font-style: italic;
+}
+
+.font-style-oblique,
+.oblique {
+  font-style: oblique;
+}
+
+/* Font Variant */
+.font-variant-normal,
+.normal {
+  font-variant: normal;
+}
+
+.font-variant-small-caps,
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Font Weight */
+$font-weights-array: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+/* Each Loop to Generate Classes */
+@each $font-weight in $font-weights-array {
+
+  .font-weight-#{$font-weight},
+  .font-#{$font-weight},
+  .text-#{$font-weight} {
+    font-weight: #{$font-weight};
+  }
+}
+
+/* Font Weight Pairs */
+$font-weight-pairs-array: ("thin":"100",
+  "light":"300",
+  "lighter":"lighter",
+  "medium":"500",
+  "semibold":"600",
+  "bold":"bold",
+  "bolder":"bolder",
+  "heavy":"900",
+  "normal":"normal",
+  "inherit":"inherit",
+  "initial":"initial"
+);
+
+
+/* Each Loop to Generate Classes */
+@each $font-weight-name,
+$font-weight in $font-weight-pairs-array {
+
+  .font-weight-#{$font-weight-name},
+  .font-#{$font-weight-name},
+  .text-#{$font-weight-name},
+  .#{$font-weight-name} {
+    font-weight: #{$font-weight};
+  }
+}
+
+/* Font Families */
+$font-families-generic-array: ("serif", "sans-serif", "cursive", "fantasy", "monospace", "inherit", "initial"
+);
+
+
+/* Each Loop to Generate Classes */
+@each $font-family in $font-families-generic-array {
+
+  .font-family-#{$font-family},
+  .font-#{$font-family} {
+    font-family: unquote($font-family);
+  }
+}
+
+$font-families-array: ("Georgia", "Helvetica", "Merriweather", "Tahoma", "Verdana", "Arial"
+);
+
+
+/* Each Loop to Generate Classes */
+@each $font-family in $font-families-array {
+
+  .font-family-#{$font-family},
+  .font-#{$font-family} {
+    font-family: "$font-family", inherit;
+  }
+}
+
+/* Fonts with Spaces in them */
+.font-family-open-sans,
+.font-open-sans {
+  font-family: "Open Sans", inherit;
+}
+
+.font-family-public-sans,
+.font-public-sans {
+  font-family: "Public Sans", inherit;
+}
+
+.font-family-roboto-mono,
+.font-roboto-mono {
+  font-family: "Roboto Mono", inherit;
+}
+
+.font-family-source-sans-pro,
+.font-source-sans-pro {
+  font-family: "Source Sans Pro", inherit;
+}
+
+/* Letter Spacing Pairs */
+$letter-spacing-pairs-array: ("neg-3":"-0.03em",
+  "neg-2":"-0.02em",
+  "neg-1":"-0.01em",
+  "auto":"initial",
+  "1":"0.05em",
+  "2":"0.1em",
+  "3":"0.15em",
+  "normal":"normal",
+  "inherit":"inherit",
+  "initial":"initial",
+);
+
+
+/* Each Loop to Generate Classes */
+@each $letter-spacing-name,
+$letter-spacing in $letter-spacing-pairs-array {
+
+  .letter-spacing-#{$letter-spacing-name},
+  .text-ls-#{$letter-spacing-name} {
+    letter-spacing: #{$letter-spacing};
+  }
+}

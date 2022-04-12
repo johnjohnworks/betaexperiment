@@ -1,0 +1,89 @@
+@import '../variables';
+
+a {
+  transition: background-color ease 1s, opacity ease 1s, opacity ease 1s, outline ease 1s,
+    color ease 1s;
+}
+
+a:link,
+a:visited,
+.anchor {
+  color: $color-primary;
+  text-decoration-line: underline;
+}
+
+a:visited,
+a.visited,
+.anchor:visited,
+.anchor.visited,
+.a-visited,
+a:link:visited,
+a:link.visited,
+a:link.a-visited {
+  background-color: transparent;
+  text-decoration-line: underline;
+  outline: none;
+  opacity: 0.75;
+}
+
+a:hover,
+a.hover,
+.anchor:hover,
+.anchor.hover,
+.a-hover,
+a:link:hover,
+a:link.hover,
+a:link.a-hover {
+  color: white !important;
+  text-decoration-line: none;
+  outline: thin dotted;
+  background-color: $bg-hover;
+  opacity: 1;
+}
+
+a:focus,
+a.focus,
+.anchor:focus,
+.anchor.focus,
+.a-focus,
+a:link:focus,
+a:link.focus,
+a:link.a-focus {
+  color: black !important;
+  background-color: $color-primary;
+  text-decoration-line: none;
+  outline: thin solid $color-primary;
+  opacity: 1;
+}
+
+a:active,
+a.active,
+.anchor:active,
+.anchor.active,
+.a-active,
+a:link:active,
+a:link.active,
+a:link.a-active {
+  color: black !important;
+  background-color: white;
+  text-decoration-line: none;
+  outline: thin solid white;
+  opacity: 1;
+}
+
+a.disabled,
+a[href].disabled,
+a.disabled:link,
+a.disabled:visited,
+a.disabled:hover,
+a.disabled:focus,
+a.disabled:active,
+.anchor.disabled,
+.disabled {
+  color: $gray-400 !important;
+  background-color: transparent;
+  text-decoration-line: line-through !important;
+  border-bottom: none !important;
+  cursor: not-allowed !important;
+  outline: none;
+}
