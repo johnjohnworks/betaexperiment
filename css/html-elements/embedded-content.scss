@@ -1,32 +1,34 @@
 @import '../variables';
 @import '../mixin';
 
-/* Embedded Content */
+@media screen {
+  /* Embedded Content */
 
-embed,
-iframe,
-object,
-video,
-audio,
-canvas {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-}
+  embed,
+  iframe,
+  object,
+  video,
+  audio,
+  canvas {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
 
-audio {
-  background-color: #f1f3f4;
-}
+  audio {
+    background-color: #f1f3f4;
+  }
 
-canvas {
-  background-color: rgba(129, 129, 129, 0.25);
-}
+  canvas {
+    background-color: rgba(129, 129, 129, 0.25);
+  }
 
-img,
-img~map {
-  max-width: 100%;
-}
+  img,
+  img~map {
+    max-width: 100%;
+  }
 
-video::selection {
-  background-color: transparent !important;
+  video::selection {
+    background-color: transparent !important;
+  }
 }

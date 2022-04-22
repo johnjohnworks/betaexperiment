@@ -5,4 +5,13 @@
   }
 }
 
+@media screen and (max-width: 60em) {
+
+  .hide-mobile,
+  .hide-phone {
+    display: none;
+  }
+
+}
+
 /* End Media Queries */

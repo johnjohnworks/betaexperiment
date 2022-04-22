@@ -1,51 +1,115 @@
 $black: rgb(0, 0, 0);
-
 $white: rgb(255, 255, 255);
 
-$dark-primary: #ADCFFF;
-$color-primary: #ADCFFF;
-$text-primary: #ADCFFF;
+$gray-1: #f2f2f2;
+$gray-2: #e6e6e6;
+$gray-3: #cccccc;
+$gray-4: #b3b3b3;
+$gray-5: #969696;
+$gray-6: #575757;
+$gray-7: #454545;
+$gray-8: #333333;
+$gray-9: #242424;
+$gray-10: #121212;
 
-$color-hover: cyan;
-$dark-disabled-color: #575757;
+$blue-1: #e6f5ff;
+$blue-2: #bfe6ff;
+$blue-3: #85ceff;
+$blue-4: #4ab7ff;
+$blue-5: #1fa5ff;
+$blue-6: #000096;
+$blue-7: #00008a;
+$blue-8: #000080;
+$blue-9: #000063;
+$blue-10: #000045;
 
-$dark-error-color: red;
-$dark-danger-color: orange;
-$warning-color: yellow;
-$success-color: green;
-$info-color: cyan;
-$primary-color: #ADCFFF;
-$brand-color: #ADCFFF;
+$cyan-1: #e6ffff;
+$cyan-2: #bfffff;
+$cyan-3: #85ffff;
+$cyan-4: #42ffff;
+$cyan-5: #1fffff;
+$cyan-6: #006363;
+$cyan-7: #005c5c;
+$cyan-8: #005454;
+$cyan-9: #004242;
+$cyan-10: #002b2b;
 
-$gray-50: #f2f2f2;
-$gray-100: #e6e6e6;
-$gray-200: #cccccc;
-$gray-300: #b2b2b2;
-$gray-400: #999999;
-$gray-500: #575757;
-$gray-600: #525252;
-$gray-700: #4a4a4a;
-$gray-800: #3b3b3b;
-$gray-900: #262626;
+$yellow-1: #ffffe6;
+$yellow-2: #ffffbf;
+$yellow-3: #ffff85;
+$yellow-4: #ffff4a;
+$yellow-5: #ffff1f;
+$yellow-6: #5c5c00;
+$yellow-7: #545400;
+$yellow-8: #4d4d00;
+$yellow-9: #3b3b00;
+$yellow-10: #292900;
 
-$bg-dark-primary: black;
-$bg-dark-secondary: $gray-900;
-$bg-dark-tertiary: $gray-800;
+$orange-1: #fff0e6;
+$orange-2: #ffd9bf;
+$orange-3: #ffb685;
+$orange-4: #ff924a;
+$orange-5: #ff781f;
+$orange-6: #963c00;
+$orange-7: #8a3700;
+$orange-8: #803300;
+$orange-9: #632800;
+$orange-10: #451c00;
 
-$bg-light-primary: white;
-$bg-light-secondary: $gray-50;
-$bg-light-tertiary: $gray-100;
+$color-primary-dark: #85ceff;
+$color-hover-dark: cyan;
+$color-focus-dark: #85ffff;
+$color-active-dark: red;
+$color-disabled-dark: #575757;
 
-$text-dark-primary: #ffffff;
-$text-dark-secondary: #d9d9d9;
-$text-dark-tertiary: #b0b0b0;
+$color-primary-light: $blue-8;
 
-$text-light-primary: #000000;
-$text-light-secondary: #1c1c1c;
-$text-light-tertiary: #3b3b3b;
+$error-color-dark: red;
+$danger-color-dark: $orange-3;
+$warning-color-dark: $yellow-3;
+$success-color-dark: green;
+$info-color-dark: $cyan-3;
+$primary-color-dark: $blue-3;
+$brand-color-dark: #ADCFFF;
+
+$hover-color-dark: $cyan-5;
+$focus-color-dark: $blue-3;
+$active-color-dark: white;
+
+$bg-primary-dark: black;
+$bg-secondary-dark: $gray-10;
+$bg-tertiary-dark: $gray-9;
+$bg-hover-dark: #1E2C40;
+
+$bg-primary-light: white;
+$bg-secondary-light: $gray-1;
+$bg-tertiary-light: $gray-2;
+
+$text-primary-dark: #ffffff;
+$text-secondary-dark: #d9d9d9;
+$text-tertiary-dark: #b0b0b0;
+
+$text-primary-light: #000000;
+$text-secondary-light: #1c1c1c;
+$text-tertiary-light: #3b3b3b;
+
+$text-color-dark: #575757;
+$text-color-light: #979797;
+
+$text-disabled-dark: $gray-4;
+$text-disabled-light: $gray-5;
+
+$link-color-dark: cyan;
 
 $colors-array: ("black": black,
   "white": white,
-  "brand": $brand-color,
-  "primary": $primary-color,
-);
+  "gray-1": $gray-1,
+  "gray-2": $gray-2,
+  "gray-3": $gray-3,
+  "gray-4": $gray-4,
+  "gray-5": $gray-5,
+  "gray-6": $gray-6,
+  "gray-7": $gray-7,
+  "gray-8": $gray-8,
+  "gray-9": $gray-9,
+  "gray-10": $gray-10);

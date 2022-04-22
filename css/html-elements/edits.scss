@@ -1,22 +1,26 @@
 @import '../variables';
 
-/* Edits */
-del,
-.delete,
-.del {
-  text-decoration-line: line-through;
-  color: #575757;
-}
+@media screen {
 
-ins,
-.insert,
-.ins {
-  color: $white;
-  text-decoration-line: none;
-}
+  /* Edits */
+  del,
+  .delete,
+  .del {
+    text-decoration-line: line-through;
+    color: #575757;
+  }
 
-ins:before,
-.insert:before,
-.ins:before {
-  content: "+ ";
+  ins,
+  .insert,
+  .ins {
+    color: $white;
+    text-decoration-line: none;
+  }
+
+  ins:before,
+  .insert:before,
+  .ins:before {
+    content: "+ ";
+  }
+
 }

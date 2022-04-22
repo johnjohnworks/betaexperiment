@@ -17,7 +17,8 @@
   }
 
   .app header {
-    background-color: $bg-dark-tertiary;
+    background-color: $bg-secondary-dark;
+    padding-right: 1em;
   }
 
   .app header a.brand {
@@ -28,11 +29,20 @@
     vertical-align: middle;
   }
 
+  .app header nav {
+    flex: auto;
+  }
+
+  .app header nav a.brand {
+    display: inline-block;
+    padding: 1.375em;
+  }
+
   .app>main {
     flex: auto;
     max-height: 100%;
     overflow: hidden;
-    background-color: $bg-dark-secondary;
+    background-color: $bg-tertiary-dark;
   }
 
   .app>main>section {
@@ -59,10 +69,31 @@
   .page {
     padding: 1.375em;
   }
+
+  .app header nav .tab {
+    padding-top: 2em;
+    padding-bottom: 1.75em;
+  }
+}
+
+/* Mobile Only */
+@media screen and (max-width:60em) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    display: none;
+  }
+
+  section {
+    overflow: auto;
+  }
 }
 
 /* Tablet & Desktop */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .app header {
     align-items: center;
     gap: 1.375em;
@@ -73,11 +104,6 @@
   .app header nav {
     display: inline-block;
     flex: auto;
-  }
-
-  .app header nav a.brand {
-    display: inline-block;
-    padding: 1.375em;
   }
 
   .app header nav .tab {
@@ -110,14 +136,15 @@
     border-left: 0.25em solid rgba(255, 255, 255, 0.25);
     padding: 0.8125em;
     white-space: nowrap;
+    transition: all ease 1s;
   }
 
   aside nav a:hover,
   aside nav a.hover {
-    color: $color-hover;
-    border-left-color: $color-hover;
+    color: $color-hover-dark;
+    border-left-color: $color-hover-dark;
     text-decoration: none;
-    background-color: $bg-hover;
+    background-color: $bg-hover-dark;
     outline: 0px none transparent !important;
   }
 
@@ -125,7 +152,7 @@
     color: white;
     border-left-color: white;
     text-decoration: none;
-    background-color: $bg-dark-tertiary;
+    background-color: $bg-tertiary-dark;
     outline: 0px none transparent !important;
   }
 

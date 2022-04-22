@@ -1,11 +1,13 @@
-.tab {
-  display: inline-block;
-  padding: 1em 1.375em 0.75em;
-  border-bottom: 0.25em solid transparent
-}
+@media screen {
+  .tab {
+    display: inline-block;
+    padding: 1em 1.375em 0.75em;
+    border-bottom: 0.25em solid transparent
+  }
 
-.tab:active,
-.tab.active {
-  color: white;
-  border-bottom-color: white;
+  .tab:active,
+  .tab.active {
+    color: white;
+    border-bottom-color: white;
+  }
 }

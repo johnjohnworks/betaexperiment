@@ -18,13 +18,13 @@
 }
 
 .alert-brand {
-  border-color: #7ab1ff;
-  background-color: rgba(122, 177, 255, 0.25);
+  border-color: #ADCFFF;
+  background-color: rgba(173, 207, 255, 0.25);
 }
 
 .alert-primary {
-  border-color: #7ab1ff;
-  background-color: rgba(122, 177, 255, 0.25);
+  border-color: #ADCFFF;
+  background-color: rgba(173, 207, 255, 0.25);
 }
 
 /* END alert.scss *//*# sourceMappingURL=alert.css.map */

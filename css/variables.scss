@@ -1,31 +1,18 @@
 @import 'color-variables';
-$white: white;
-$bg-primary-dark: black;
-$bg-hover: #1E2C40;
-$bg-light: white;
-$color: white;
-$text-color-dark: #575757;
-$text-color-light: #979797;
+
 $font-family: sans-serif;
 $code-font-family: monospace;
 $code-font: $code-font-family;
-$link-color: cyan;
-$focus-color: blue;
-$active-color: lightgray;
-$disabled-color: $gray-400;
+
 $base-font-size:16px;
 $one-unit:0.0625em;
 $one-unit-em: $one-unit;
 $one-em:1em;
-$gray-dark: darkgray;
 
-$hover-color: cyan;
-$border-color: $gray-400;
+$border-color: $gray-4;
 $border-radius: 0.25em;
 $border-style: solid;
 $border-width: $one-unit-em;
-
-$text-disabled: #575757;
 
 $margin: 1em;
 $padding: 1em;

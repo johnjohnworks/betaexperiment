@@ -19,6 +19,7 @@
 
   <link rel="icon" type="image/png" href="favicon.png">
   <link href="css/beta-experiment.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/7d92104246.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="app">
@@ -32,15 +33,17 @@
     <nav role="navigation">
       <a href="#id-main" class="screen-reader-only">Skip navigation</a>
       <a href="index.html" class="brand" title="Beta Experiment"><img src="favicon.png" alt="logo" />
-        &nbsp;<strong>Beta
-          Experiment</strong></a>
-      <a href="index.html" class="tab" title="Home">Home</a><span class="tab active">Documentation</span><a
-        href="https://www.figma.com/community/file/1095639605803636403" target="_blank" class="tab"
-        title="Figma">Figma</a><a href="https://github.com/johnjohnworks/betaexperiment" class="tab" title="Github"
-        target="_blank">Github</a>
+        <span class="hide-mobile">&nbsp;<strong>Beta
+            Experiment</strong></span></a>
+      <a href="index.html" class="tab" title="Home"><i class="fa-solid fa-house-heart"></i><span class="hide-mobile">
+          Home</span></a><span class="tab active"><i class="fa-solid fa-book"></i><span class="hide-mobile">
+          Documentation</span></span><a href="https://www.figma.com/community/file/1095639605803636403" target="_blank"
+        class="tab" title="Figma"><i class="fa-brands fa-figma"></i><span class="hide-mobile"> Figma</span><a
+          href="https://github.com/johnjohnworks/betaexperiment" class="tab" title="Github" target="_blank"><i
+            class="fa-brands fa-github-alt"></i><span class="hide-mobile"> Github</span></a>
     </nav>
     <a href="https://github.com/johnjohnworks/betaexperiment" target="_blank" class="button"
-      title="Download on Github">Download</a>
+      title="Download on Github"><i class="fa-solid fa-download"></i><span class="hide-mobile"> Download</span></a>
   </header>
   <main id="id-main">
     <aside role="complementary" title="a side bar">
@@ -285,8 +288,8 @@
           <fieldset>
             <legend>form fieldset legend</legend>
             <label id="id-label">label</label>
-            <div class="flex-row gap">
-              <div>
+            <div class="row">
+              <div class="col-md-2">
                 <label><input type="checkbox" role="checkbox" aria-checked="false" title="input checkbox"
                     value="input checkbox" />
                   Checkbox</label>
@@ -314,7 +317,7 @@
                   disabled</label>
               </div>
 
-              <div>
+              <div class="col-md-2">
                 <label><input type="radio" role="radio" aria-checked="false" title="input radio" value="input radio" />
                   Radio</label>
                 <label><input type="radio" role="radio" aria-checked="false" value="input radio hover"
@@ -340,31 +343,31 @@
                   disabled</label>
               </div>
             </div>
-            <label>Range</label>
-            <input name="id-input-range" type="range" id="id-input-range" max="100" min="0" step="10"
-              title="input range" value="50" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-            <label>Password</label>
-            <input name="id-input-password" type="password" id="id-input-password" placeholder="input password"
-              title="input password" value="input password" role="textbox">
             <label>Email</label>
             <input name="id-input-email" type="email" id="id-input-email" placeholder="email@email.com"
               title="input email" value="email@email.com" role="textbox">
-            <label>Telephone</label>
-            <input name="id-input-tel" type="tel" id="id-input-tel" placeholder="input tel" title="input tel"
-              value="input tel">
-            <label>Number</label>
-            <input name="id-input-number" type="number" id="id-input-number" placeholder="#" title="input number"
-              value="8">
-            <label><abbr title="Uniform Resource Locator">URL</abbr></label>
-            <input type="url" name="id-url" id="id-url" placeholder="input url" value="http://www.betaexperiment.com/"
-              title="URL">
-            <label>Search</label>
-            <input type="search" name="id-input-search" id="id-input-search" placeholder="input search"
-              value="input search" title="input search">
             <label>File</label>
             <input name="id-input-file" type="file" id="id-input-file" title="input file">
             <label>Input Image</label>
             <input name="id-input-image" type="image" id="id-input-image" title="input image" src="#" alt="#">
+            <label>Number</label>
+            <input name="id-input-number" type="number" id="id-input-number" placeholder="#" title="input number"
+              value="8">
+            <label>Password</label>
+            <input name="id-input-password" type="password" id="id-input-password" placeholder="input password"
+              title="input password" value="input password" role="textbox">
+            <label>Range</label>
+            <input name="id-input-range" type="range" id="id-input-range" max="100" min="0" step="10"
+              title="input range" value="50" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <label>Search</label>
+            <input type="search" name="id-input-search" id="id-input-search" placeholder="input search"
+              value="input search" title="input search">
+            <label>Telephone</label>
+            <input name="id-input-tel" type="tel" id="id-input-tel" placeholder="input tel" title="input tel"
+              value="input tel">
+            <label><abbr title="Uniform Resource Locator">URL</abbr></label>
+            <input type="url" name="id-url" id="id-url" placeholder="input url" value="http://www.betaexperiment.com/"
+              title="URL">
             <div class="flex-row gap">
               <input name="id-input-button" type="button" id="id-input-button" title="input button"
                 value="input button">
@@ -384,15 +387,20 @@
           title="Image img" />
         <br />
         <br />
-        <div class="flex-row gap">
-          <input type="text" role="textbox" placeholder="input..." id="id-input" />
-          <input type="text" role="textbox" placeholder="input hover..." class="hover" />
-          <input type="text" role="textbox" placeholder="input focus..." class="focus" />
-          <input type="text" placeholder="readonly" class="readonly" readonly />
-          <input type="text" placeholder="input disabled" class="disbaled" disabled />
+        <div class="row">
+          <div class="col-responsive">
+            <input type="text" role="textbox" placeholder="input..." id="id-input" /></div>
+          <div class="col-responsive">
+            <input type="text" role="textbox" placeholder="input hover..." class="hover" /></div>
+          <div class="col-responsive">
+            <input type="text" role="textbox" placeholder="input focus..." class="focus" /></div>
+          <div class="col-responsive">
+            <input type="text" placeholder="readonly" class="readonly" readonly /></div>
+          <div class="col-responsive">
+            <input type="text" placeholder="input disabled" class="disbaled" disabled /></div>
         </div>
         <br />
-        <div class="flex-row gap">
+        <div class=" desktop-flex-row gap">
           <input type="text" role="textbox" placeholder="input..." value="input value" id="id-input" />
           <input type="text" role="textbox" placeholder="input hover..." value="input value hover" class="hover" />
           <input type="text" role="textbox" placeholder="input focus..." value="input value focus" class="focus" />
@@ -463,37 +471,47 @@
         <samp id="id-sample">sample - samp</samp>
         <br />
         <br />
-        <div class="flex-row gap">
-          <select id="id-select" title="select">
-            <option>- Select -</option>
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-          </select>
-          <select title="select hover" class="hover">
-            <option>- Select hover -</option>
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-          </select>
-          <select title="select focus" class="focus">
-            <option>- Select focus -</option>
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-          </select>
-          <select title="select active" class="active">
-            <option>- Select active -</option>
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-          </select>
-          <select title="select disabled" class="disabled" disabled>
-            <option>- Select disabled -</option>
-            <option>Option one</option>
-            <option>Option two</option>
-            <option>Option three</option>
-          </select>
+        <div class="row">
+          <div class="col-responsive">
+            <select id="id-select" title="select">
+              <option>- Select -</option>
+              <option>Option one</option>
+              <option>Option two</option>
+              <option>Option three</option>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <select title="select hover" class="hover">
+              <option>- Select hover -</option>
+              <option>Option one</option>
+              <option>Option two</option>
+              <option>Option three</option>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <select title="select focus" class="focus">
+              <option>- Select focus -</option>
+              <option>Option one</option>
+              <option>Option two</option>
+              <option>Option three</option>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <select title="select active" class="active">
+              <option>- Select active -</option>
+              <option>Option one</option>
+              <option>Option two</option>
+              <option>Option three</option>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <select title="select disabled" class="disabled" disabled>
+              <option>- Select disabled -</option>
+              <option>Option one</option>
+              <option>Option two</option>
+              <option>Option three</option>
+            </select>
+          </div>
         </div>
         <br />
         <br />

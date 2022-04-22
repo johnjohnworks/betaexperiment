@@ -1,11 +1,13 @@
-.all-inital {
-  all: initial;
-}
+@media screen {
+  .all-inital {
+    all: initial;
+  }
 
-.all-inherit {
-  all: inherit;
-}
+  .all-inherit {
+    all: inherit;
+  }
 
-.all-unset {
-  all: unset;
+  .all-unset {
+    all: unset;
+  }
 }

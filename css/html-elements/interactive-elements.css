@@ -1,17 +1,17 @@
 details > summary {
-  color: #7ab1ff;
+  color: #85ceff;
   text-decoration: underline;
   min-height: 2.75em;
   line-height: 2.75em;
-  transition: background-color ease 1s, border-color ease 1s, padding-left ease 1s, outline ease 1s, color ease 1s;
+  transition: all ease 1s;
 }
 
 details > summary:focus {
-  background-color: #7ab1ff;
-  border-color: #7ab1ff;
+  background-color: #85ceff;
+  border-color: #85ceff;
   color: black;
   padding-left: 1em;
-  outline: thin solid #7ab1ff;
+  outline: thin solid #85ceff;
 }
 
 details > summary:active {

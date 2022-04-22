@@ -116,28 +116,28 @@ $color-value in $colors-array {
   }
 }
 
-.bg-dark-primary {
+.bg-primary-dark {
   background-color: black;
 }
 
-.bg-dark-secondary {
-  background-color: $gray-900;
+.bg-secondary-dark {
+  background-color: $gray-10;
 }
 
-.bg-dark-tertiary {
-  background-color: $gray-600;
+.bg-tertiary-dark {
+  background-color: $gray-9;
 }
 
-.bg-light-primary {
+.bg-primary-light {
   background-color: white;
 }
 
-.bg-light-secondary {
-  background-color: $gray-50;
+.bg-secondary-light {
+  background-color: $gray-1;
 }
 
-.bg-light-tertiary {
-  background-color: $gray-100;
+.bg-tertiary-light {
+  background-color: $gray-2;
 }
 
 /* END Colors */

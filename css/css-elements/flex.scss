@@ -1,309 +1,324 @@
 @import '../variables';
 
-.display-flex,
-.flex {
-  display: flex;
-}
+@media screen {
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-row,
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-
-
-/* Align Items */
-$align-items-array: (stretch, center, flex-start, flex-end, baseline, initial, inherit);
-
-@each $align-items in $align-items-array {
-
-  .align-items-#{$align-items},
-  .flex-align-#{$align-items} {
-    align-items: #{$align-items};
+  .display-flex,
+  .flex {
+    display: flex;
   }
-}
 
-.flex-align-start {
-  align-items: flex-start;
-}
-
-.flex-align-end {
-  align-items: flex-end;
-}
-
-/* Justify Contrant */
-$justify-content-array: (flex-start, flex-end, center, space-between, space-around, initial, inherit);
-
-@each $justify-content in $justify-content-array {
-
-  .justify-content-#{$justify-content},
-  .flex-justify-#{$justify-content} {
-    justify-content: #{$justify-content};
+  .flex-column {
+    display: flex;
+    flex-direction: column;
   }
-}
 
-.flex-justify {
-  justify-content: space-between;
-}
-
-.flex-justify-start {
-  justify-content: flex-start;
-}
-
-.flex-justify-end {
-  justify-content: flex-end;
-}
-
-.flex-direction-column,
-.flex-column {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: vertical !important;
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-direction-column-reverse,
-.flex-column-reverse {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.flex-direction-row,
-.flex-row {
-  -webkit-box-direction: normal !important;
-  -webkit-box-orient: horizontal !important;
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-direction-row-reverse,
-.flex-row-reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.flex-wrap-wrap,
-.flex-wrap,
-.wrap {
-  flex-wrap: wrap;
-}
-
-.flex-no-wrap {
-  -ms-flex-wrap: nowrap !important;
-  flex-wrap: nowrap !important;
-}
-
-.flex-1 {
-  flex: 1;
-}
-
-/* Font Grow Pairs */
-$flex-grow-pairs-array: ("0_5":"0.5",
-  "1":"1",
-  "2":"2",
-  "3":"3",
-  "4":"4",
-  "5":"5",
-  "6":"6",
-  "7":"7",
-  "8":"8",
-  "9":"9",
-  "10":"10",
-  "11":"11",
-  "12":"12",
-  "auto":"auto",
-  "fill":"1 0 0!important"
-);
-
-/* Each Loop to Generate Classes */
-@each $flex-grow-name,
-$flex-grow in $flex-grow-pairs-array {
-
-  .flex-grow-#{$flex-grow-name},
-  .flex-#{$flex-grow-name} {
-    flex-grow: #{$flex-grow};
+  .flex-row,
+  .row {
+    display: flex;
+    flex-direction: row;
   }
-}
 
-/* Each Loop to Generate Classes */
-@each $flex-grow-name,
-$flex-grow in $flex-grow-pairs-array {
-  .flex-shrink-#{$flex-grow-name} {
-    flex-shrink: #{$flex-grow};
+  /* Align Items */
+  $align-items-array: (stretch, center, flex-start, flex-end, baseline, initial, inherit);
+
+  @each $align-items in $align-items-array {
+
+    .align-items-#{$align-items},
+    .flex-align-#{$align-items} {
+      align-items: #{$align-items};
+    }
   }
-}
 
-.flex-wrap-nowrap,
-.flex-nowrap,
-.nowrap {
-  flex-wrap: nowrap;
-}
-
-.flex-wrap-wrap-reverse,
-.flex-wrap-reverse,
-.wrap-reverse {
-  flex-wrap: wrap-reverse;
-}
-
-.align-content-stretch {
-  align-content: stretch;
-}
-
-.align-content-center {
-  align-content: center;
-}
-
-.align-content-flex-start {
-  align-content: flex-start;
-}
-
-.align-content-flex-end {
-  align-content: flex-end;
-}
-
-.align-content-space-between {
-  align-content: space-between;
-}
-
-.align-content-space-around {
-  align-content: space-around;
-}
-
-.align-content-initial {
-  align-content: initial;
-}
-
-.align-content-inherit {
-  align-content: inherit;
-}
-
-.align-items-stretch {
-  align-items: stretch;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.align-items-flex-start {
-  align-items: flex-start;
-}
-
-.align-items-flex-end {
-  align-items: flex-end;
-}
-
-.align-items-baseline {
-  align-items: baseline;
-}
-
-.align-items-initial {
-  align-items: initial;
-}
-
-.align-items-inherit {
-  align-items: inherit;
-}
-
-.align-self-auto {
-  align-self: auto;
-}
-
-.align-self-stretch {
-  align-self: stretch;
-}
-
-.align-self-center {
-  align-self: center;
-}
-
-.align-self-flex-start {
-  align-self: flex-start;
-}
-
-.align-self-flex-end {
-  align-self: flex-end;
-}
-
-.align-self-baseline {
-  align-self: baseline;
-}
-
-.align-self-initial {
-  align-self: initial;
-}
-
-.align-self-inherit {
-  align-self: inherit;
-}
-
-/* Order */
-$orders-array: ("initial":"initial",
-  "first":"first",
-  "0_5":"5",
-  "1":"1",
-  "2":"2",
-  "3":"3",
-  "4":"4",
-  "5":"5",
-  "6":"6",
-  "7":"7",
-  "8":"8",
-  "9":"9",
-  "10":"10",
-  "11":"11",
-  "12":"12",
-  "last":"last",
-);
-
-/* Each Loop to Generate Classes */
-@each $order-name,
-$order in $orders-array {
-  .order-#{$order-name} {
-    font-weight: #{$order};
+  .flex-align-start {
+    align-items: flex-start;
   }
+
+  .flex-align-end {
+    align-items: flex-end;
+  }
+
+  /* Justify Contrant */
+  $justify-content-array: (flex-start, flex-end, center, space-between, space-around, initial, inherit);
+
+  @each $justify-content in $justify-content-array {
+
+    .justify-content-#{$justify-content},
+    .flex-justify-#{$justify-content} {
+      justify-content: #{$justify-content};
+    }
+  }
+
+  .flex-justify {
+    justify-content: space-between;
+  }
+
+  .flex-justify-start {
+    justify-content: flex-start;
+  }
+
+  .flex-justify-end {
+    justify-content: flex-end;
+  }
+
+  .flex-direction-column,
+  .flex-column {
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-direction-column-reverse,
+  .flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .flex-direction-row,
+  .flex-row {
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: horizontal !important;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-direction-row-reverse,
+  .flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .flex-wrap-wrap,
+  .flex-wrap,
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .flex-no-wrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  /* Font Grow Pairs */
+  $flex-grow-pairs-array: ("0_5":"0.5",
+    "1":"1",
+    "2":"2",
+    "3":"3",
+    "4":"4",
+    "5":"5",
+    "6":"6",
+    "7":"7",
+    "8":"8",
+    "9":"9",
+    "10":"10",
+    "11":"11",
+    "12":"12",
+    "auto":"auto",
+    "fill":"1 0 0!important"
+  );
+
+  /* Each Loop to Generate Classes */
+  @each $flex-grow-name,
+  $flex-grow in $flex-grow-pairs-array {
+
+    .flex-grow-#{$flex-grow-name},
+    .flex-#{$flex-grow-name} {
+      flex-grow: #{$flex-grow};
+    }
+  }
+
+  /* Each Loop to Generate Classes */
+  @each $flex-grow-name,
+  $flex-grow in $flex-grow-pairs-array {
+    .flex-shrink-#{$flex-grow-name} {
+      flex-shrink: #{$flex-grow};
+    }
+  }
+
+  .flex-wrap-nowrap,
+  .flex-nowrap,
+  .nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .flex-wrap-wrap-reverse,
+  .flex-wrap-reverse,
+  .wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .align-content-stretch {
+    align-content: stretch;
+  }
+
+  .align-content-center {
+    align-content: center;
+  }
+
+  .align-content-flex-start {
+    align-content: flex-start;
+  }
+
+  .align-content-flex-end {
+    align-content: flex-end;
+  }
+
+  .align-content-space-between {
+    align-content: space-between;
+  }
+
+  .align-content-space-around {
+    align-content: space-around;
+  }
+
+  .align-content-initial {
+    align-content: initial;
+  }
+
+  .align-content-inherit {
+    align-content: inherit;
+  }
+
+  .align-items-stretch {
+    align-items: stretch;
+  }
+
+  .align-items-center {
+    align-items: center;
+  }
+
+  .align-items-flex-start {
+    align-items: flex-start;
+  }
+
+  .align-items-flex-end {
+    align-items: flex-end;
+  }
+
+  .align-items-baseline {
+    align-items: baseline;
+  }
+
+  .align-items-initial {
+    align-items: initial;
+  }
+
+  .align-items-inherit {
+    align-items: inherit;
+  }
+
+  .align-self-auto {
+    align-self: auto;
+  }
+
+  .align-self-stretch {
+    align-self: stretch;
+  }
+
+  .align-self-center {
+    align-self: center;
+  }
+
+  .align-self-flex-start {
+    align-self: flex-start;
+  }
+
+  .align-self-flex-end {
+    align-self: flex-end;
+  }
+
+  .align-self-baseline {
+    align-self: baseline;
+  }
+
+  .align-self-initial {
+    align-self: initial;
+  }
+
+  .align-self-inherit {
+    align-self: inherit;
+  }
+
+  /* Order */
+  $orders-array: ("initial":"initial",
+    "first":"first",
+    "0_5":"5",
+    "1":"1",
+    "2":"2",
+    "3":"3",
+    "4":"4",
+    "5":"5",
+    "6":"6",
+    "7":"7",
+    "8":"8",
+    "9":"9",
+    "10":"10",
+    "11":"11",
+    "12":"12",
+    "last":"last",
+  );
+
+  /* Each Loop to Generate Classes */
+  @each $order-name,
+  $order in $orders-array {
+    .order-#{$order-name} {
+      font-weight: #{$order};
+    }
+  }
+
+  .justify-content-center,
+  .center {
+    justify-content: center;
+  }
+
+  .justify-content-flex-start,
+  .flex-start {
+    justify-content: flex-start;
+  }
+
+  .justify-content-flex-end,
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  .justify-content-space-around,
+  .space-around {
+    justify-content: space-around;
+  }
+
+  .justify-content-space-between,
+  .space-between {
+    justify-content: space-between;
+  }
+
+  .flex-row.gap,
+  .flex-column.gap {
+    gap: 1.375em;
+  }
+
+  .row-gap {
+    row-gap: 1.375em;
+  }
+
+  .column-gap {
+    column-gap: 2em;
+  }
+
 }
 
+@media screen and (min-width: 40em) {
 
-.justify-content-center,
-.center {
-  justify-content: center;
-}
+  .desktop-flex-row {
+    display: flex;
+    flex-direction: row;
+  }
 
-.justify-content-flex-start,
-.flex-start {
-  justify-content: flex-start;
-}
+  .desktop-flex-row.gap {
+    gap: 1.375em;
+  }
 
-.justify-content-flex-end,
-.flex-end {
-  justify-content: flex-end;
-}
-
-.justify-content-space-around,
-.space-around {
-  justify-content: space-around;
-}
-
-.justify-content-space-between,
-.space-between {
-  justify-content: space-between;
-}
-
-.gap {
-  gap: 1.375em;
-}
-
-.row-gap {
-  row-gap: 1.375em;
-}
-
-.column-gap {
-  column-gap: 2em;
 }

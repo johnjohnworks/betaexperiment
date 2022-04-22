@@ -1,20 +1,22 @@
-/* Edits */
-del,
+@media screen {
+  /* Edits */
+  del,
 .delete,
 .del {
-  text-decoration-line: line-through;
-  color: #575757;
-}
+    text-decoration-line: line-through;
+    color: #575757;
+  }
 
-ins,
+  ins,
 .insert,
 .ins {
-  color: white;
-  text-decoration-line: none;
-}
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+  }
 
-ins:before,
+  ins:before,
 .insert:before,
 .ins:before {
-  content: "+ ";
+    content: "+ ";
+  }
 }/*# sourceMappingURL=edits.css.map */
