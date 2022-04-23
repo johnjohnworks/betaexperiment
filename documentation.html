@@ -157,12 +157,12 @@
     <section>
       <div class="page">
         <hgroup id="id-hgroup">
-          <h1 id="id-headings">Heading one h1</h1>
-          <h2>Heading two h2</h2>
-          <h3>Heading three h3</h3>
-          <h4>Heading four h4</h4>
-          <h5>Heading five h5</h5>
-          <h6>Heading six h6</h6>
+          <h1 id="id-headings">Heading one &lt;h1&gt;</h1>
+          <h2>Heading two &lt;h2&gt;</h2>
+          <h3>Heading three &lt;h3&gt;</h3>
+          <h4>Heading four &lt;h4&gt;</h4>
+          <h5>Heading five &lt;h5&gt;</h5>
+          <h6>Heading six &lt;h6&gt;</h6>
         </hgroup>
         <br />
         <br />
@@ -231,19 +231,13 @@
         <code id="id-code">code</code>
         <br />
         <br />
-        <div class="flex-row gap">
-          <div class="datalist">
-            <label for="datalist">datalist</label>
-            <input list="datalists" name="datalist" id="datalist" placeholder="datalist" />
-            <datalist id="datalists">
-              <option value="datalist"></option>
-              <option value="datalist disabled"></option>
-            </datalist>
-          </div>
-          <div class="datalist">
-            <label for="datalist-disabled">datalist disabled</label>
-            <input list="datalists" name="datalist-disabled" value="disabled" id="datalist-disabled" disabled />
-          </div>
+        <div class="datalist">
+          <label for="datalist">Datalist</label>
+          <input list="datalists" name="datalist" id="datalist" placeholder="datalist" type="text" title="Datalist" />
+          <datalist id="datalists">
+            <option value="datalist"></option>
+            <option value="datalist disabled"></option>
+          </datalist>
         </div>
         <br />
         <br />
@@ -286,63 +280,68 @@
         </figure>
         <form accept-charset="UTF-8" action="#" autocomplete="off" id="id-form" role="form">
           <fieldset>
-            <legend>form fieldset legend</legend>
-            <label id="id-label">label</label>
+            <legend>Form fieldset legend</legend>
+            <label id="id-label">Label</label>
             <div class="row">
               <div class="col-md-2">
-                <label><input type="checkbox" role="checkbox" aria-checked="false" title="input checkbox"
-                    value="input checkbox" />
+                <label class="checkbox"><input type="checkbox" role="checkbox" aria-checked="false"
+                    title="input checkbox" value="input checkbox" />
                   Checkbox</label>
-                <label><input type="checkbox" role="checkbox" aria-checked="false" value="input checkbox hover"
-                    title="input checkbox hover" class="hover"> Checkbox hover</label>
-                <label><input type="checkbox" role="checkbox" aria-checked="false" value="input checkbox focus"
-                    title="input checkbox focus" class="focus"> Checkbox focus</label>
-                <label><input type="checkbox" role="checkbox" value="input checkbox hover" title="input checkbox hover"
-                    aria-checked="false" class="active"> Checkbox active</label>
-                <label class="disabled"><input type="checkbox" role="checkbox" value="input checkbox hover"
-                    title="input checkbox hover" aria-checked="false" class="disabled" disabled> Checkbox
+                <label class="checkbox hover"><input type="checkbox" role="checkbox" aria-checked="false"
+                    value="input checkbox hover" title="input checkbox hover" class="hover"> Checkbox hover</label>
+                <label class="checkbox focus"><input type="checkbox" role="checkbox" aria-checked="false"
+                    value="input checkbox focus" title="input checkbox focus" class="focus"> Checkbox focus</label>
+                <label class="checkbox active"><input type="checkbox" role="checkbox" value="input checkbox hover"
+                    title="input checkbox active" aria-checked="false" class="active"> Checkbox active</label>
+                <label class="disabled"><input type="checkbox" role="checkbox" value="input checkbox disabled"
+                    title="input checkbox disabled" aria-checked="false" class="disabled" disabled> Checkbox
                   disabled</label>
-                <label><input name="id-input-checkbox-checked" type="checkbox" id="id-input-checkbox-checked"
-                    title="input checkbox checked" value="input checkbox checked" checked role="checkbox"
-                    aria-checked="true">
+                <label class="checkbox"><input name="id-input-checkbox-checked" type="checkbox"
+                    id="id-input-checkbox-checked" title="input checkbox checked" value="input checkbox checked" checked
+                    role="checkbox" aria-checked="true">
                   Checkbox checked</label>
-                <label><input type="checkbox" role="checkbox" checked aria-checked="true" class="hover"
-                    value="input checkbox checked" title="input checkbox checked"> Checkbox checked hover</label>
-                <label><input type="checkbox" role="checkbox" checked aria-checked="true" class="focus"
-                    value="input checkbox checked" title="input checkbox checked"> Checkbox checked focus</label>
-                <label><input type="checkbox" role="checkbox" checked aria-checked="true" class="active"
-                    value="input checkbox checked" title="input checkbox checked"> Checkbox checked active</label>
-                <label><input type="checkbox" role="checkbox" checked aria-checked="true" class="diabled"
-                    value="input checkbox checked" title="input checkbox checked" disabled> Checkbox checked
+                <label class="checkbox hover"><input type="checkbox" role="checkbox" checked aria-checked="true"
+                    class="hover" value="input checkbox checked" title="input checkbox checked"> Checkbox checked
+                  hover</label>
+                <label class="checkbox focus"><input type="checkbox" role="checkbox" checked aria-checked="true"
+                    class="focus" value="input checkbox checked" title="input checkbox checked"> Checkbox checked
+                  focus</label>
+                <label class="checkbox active"><input type="checkbox" role="checkbox" checked aria-checked="true"
+                    class="active" value="input checkbox checked" title="input checkbox checked"> Checkbox checked
+                  active</label>
+                <label class="disabled"><input type="checkbox" role="checkbox" checked aria-checked="true"
+                    class="disabled" value="input checkbox checked" title="input checkbox checked" disabled> Checkbox
+                  checked
                   disabled</label>
               </div>
-
               <div class="col-md-2">
-                <label><input type="radio" role="radio" aria-checked="false" title="input radio" value="input radio" />
+                <label class="radio"><input type="radio" role="radio" aria-checked="false" title="input radio"
+                    value="input radio" />
                   Radio</label>
-                <label><input type="radio" role="radio" aria-checked="false" value="input radio hover"
-                    title="input radio hover" class="hover"> Radio hover</label>
-                <label><input type="radio" role="radio" aria-checked="false" value="input radio focus"
-                    title="input radio focus" class="focus"> Radio focus</label>
-                <label><input type="radio" role="radio" value="input radio hover" title="input radio hover"
-                    aria-checked="false" class="active"> Radio active</label>
-                <label class="disabled"><input type="radio" role="radio" value="input radio hover"
-                    title="input radio hover" aria-checked="false" class="disabled" disabled> Radio
+                <label class="radio hover"><input type="radio" role="radio" aria-checked="false"
+                    value="input radio hover" title="input radio hover" class="hover"> Radio hover</label>
+                <label class="radio focus"><input type="radio" role="radio" aria-checked="false"
+                    value="input radio focus" title="input radio focus" class="focus"> Radio focus</label>
+                <label class="radio active"><input type="radio" role="radio" value="input radio active"
+                    title="input radio active" aria-checked="false" class="active"> Radio active</label>
+                <label class="disabled"><input type="radio" role="radio" value="input radio diabled"
+                    title="input radio disabled" aria-checked="false" class="disabled" disabled> Radio
                   disabled</label>
-                <label><input type="radio" role="radio" title="input radio checked" value="input radio checked" checked
-                    aria-checked="true">
+                <label class="radio"><input type="radio" role="radio" title="input radio checked"
+                    value="input radio checked" checked aria-checked="true">
                   Radio checked</label>
-                <label><input type="radio" role="radio" checked aria-checked="true" class="hover"
+                <label class="radio hover"><input type="radio" role="radio" checked aria-checked="true" class="hover"
                     value="input radio checked" title="input radio checked"> Radio checked hover</label>
-                <label><input type="radio" role="radio" checked aria-checked="true" class="focus"
+                <label class="radio focus"><input type="radio" role="radio" checked aria-checked="true" class="focus"
                     value="input radio checked" title="input radio checked"> Radio checked focus</label>
-                <label><input type="radio" role="radio" checked aria-checked="true" class="active"
+                <label class="radio active"><input type="radio" role="radio" checked aria-checked="true" class="active"
                     value="input radio checked" title="input radio checked"> Radio checked active</label>
-                <label><input type="radio" role="radio" checked aria-checked="true" class="diabled"
+                <label class="disabled"><input type="radio" role="radio" checked aria-checked="true" class="disabled"
                     value="input radio checked" title="input radio checked" disabled> Radio checked
                   disabled</label>
               </div>
             </div>
+            <br />
             <label>Email</label>
             <input name="id-input-email" type="email" id="id-input-email" placeholder="email@email.com"
               title="input email" value="email@email.com" role="textbox">
@@ -365,6 +364,10 @@
             <label>Telephone</label>
             <input name="id-input-tel" type="tel" id="id-input-tel" placeholder="input tel" title="input tel"
               value="input tel">
+            <label>Text</label>
+            <input type="text" placeholder="input text" title="input text" value="input text">
+            <label>Textarea</label>
+            <textarea>Textarea</textarea>
             <label><abbr title="Uniform Resource Locator">URL</abbr></label>
             <input type="url" name="id-url" id="id-url" placeholder="input url" value="http://www.betaexperiment.com/"
               title="URL">
@@ -388,24 +391,63 @@
         <br />
         <br />
         <div class="row">
-          <div class="col-responsive">
-            <input type="text" role="textbox" placeholder="input..." id="id-input" /></div>
-          <div class="col-responsive">
-            <input type="text" role="textbox" placeholder="input hover..." class="hover" /></div>
-          <div class="col-responsive">
-            <input type="text" role="textbox" placeholder="input focus..." class="focus" /></div>
-          <div class="col-responsive">
-            <input type="text" placeholder="readonly" class="readonly" readonly /></div>
-          <div class="col-responsive">
-            <input type="text" placeholder="input disabled" class="disbaled" disabled /></div>
+          <div class="col-4-md">
+            <label>* Input placeholder required</label>
+            <input type="text" role="textbox" placeholder="input placeholder required..." class="required" required
+              title="Required" />
+          </div>
+          <div class="col-4-md">
+            <label>Input placeholder default</label>
+            <input type="text" role="textbox" placeholder="input placeholder default..." id="id-input" />
+          </div>
+          <div class="col-4-md">
+            <label>Input placeholder hover</label>
+            <input type="text" role="textbox" placeholder="input placeholder hover placeholder..." class="hover" />
+          </div>
+          <div class="col-4-md">
+            <label>Input placeholder focus</label>
+            <input type="text" role="textbox" placeholder="input placeholder focusr..." class="focus" />
+          </div>
+          <div class="col-4-md">
+            <label>Input placeholder readonly</label>
+            <input type="text" placeholder="input placeholder readonly..." class="readonly" readonly />
+          </div>
+          <div class="col-4-md">
+            <label>Input placeholder disabled</label>
+            <input type="text" placeholder="input placeholder disabled..." class="disabled" disabled />
+          </div>
         </div>
         <br />
-        <div class=" desktop-flex-row gap">
-          <input type="text" role="textbox" placeholder="input..." value="input value" id="id-input" />
-          <input type="text" role="textbox" placeholder="input hover..." value="input value hover" class="hover" />
-          <input type="text" role="textbox" placeholder="input focus..." value="input value focus" class="focus" />
-          <input type="text" placeholder="readonly" value="readonly" class="readonly" readonly />
-          <input type="text" placeholder="input disabled" value="input value disabled" class="disbaled" disabled />
+        <div class="row">
+          <div class="col-4-md">
+            <label>* Input value required</label>
+            <input type="text" role="textbox" placeholder="input placeholder required..." value="input value required"
+              class="required" required title="Required" />
+          </div>
+          <div class="col-4-md">
+            <label>Input value default</label>
+            <input type="text" role="textbox" placeholder="input placeholder default..." value="input default value" />
+          </div>
+          <div class="col-4-md">
+            <label>Input value hover</label>
+            <input type="text" role="textbox" placeholder="input placeholder hover..." value="input value hover"
+              class="hover" />
+          </div>
+          <div class="col-4-md">
+            <label>Input focus value</label>
+            <input type="text" role="textbox" placeholder="input placeholder focus..." value="input value focus"
+              class="focus" />
+          </div>
+          <div class="col-4-md">
+            <label>Input value readonly</label>
+            <input type="text" placeholder="input placeholder readonly..." value="input value readonly" class="readonly"
+              readonly />
+          </div>
+          <div class="col-4-md">
+            <label>Input value disabled</label>
+            <input type="text" placeholder="input placeholder disabled..." value="input value disabled" class="disbaled"
+              disabled />
+          </div>
         </div>
         <br />
         <br />
@@ -462,7 +504,7 @@
         <pre id="id-preformatted">preformatted - pre</pre>
         <br />
         <br />
-        <progress role="progressbar" value="50" max="100" id="id-progress">50%</progress>
+        <progress role="progressbar" value="50" max="100" id="id-progress" title="Progress 50%">50%</progress>
         <br />
         <br />
         <q id="id-quote">Quote - q</q>
@@ -473,6 +515,7 @@
         <br />
         <div class="row">
           <div class="col-responsive">
+            <label>Select</label>
             <select id="id-select" title="select">
               <option>- Select -</option>
               <option>Option one</option>
@@ -481,6 +524,7 @@
             </select>
           </div>
           <div class="col-responsive">
+            <label>Select hover</label>
             <select title="select hover" class="hover">
               <option>- Select hover -</option>
               <option>Option one</option>
@@ -489,6 +533,7 @@
             </select>
           </div>
           <div class="col-responsive">
+            <label>Select focus</label>
             <select title="select focus" class="focus">
               <option>- Select focus -</option>
               <option>Option one</option>
@@ -497,6 +542,7 @@
             </select>
           </div>
           <div class="col-responsive">
+            <label>Select active</label>
             <select title="select active" class="active">
               <option>- Select active -</option>
               <option>Option one</option>
@@ -505,6 +551,7 @@
             </select>
           </div>
           <div class="col-responsive">
+            <label>Select disabled</label>
             <select title="select disabled" class="disabled" disabled>
               <option>- Select disabled -</option>
               <option>Option one</option>
@@ -515,72 +562,87 @@
         </div>
         <br />
         <br />
-        <div class="flex-row gap">
-          <select multiple role="listbox" name="select-multiple" size="7">
-            <option>-- Select mulitple --</option>
-            <optgroup label="optgroup label">
-              <option role="option" value="Option one">Option one</option>
-              <option role="option" value="Option two">Option two</option>
-              <option role="option" value="Option three">Option three</option>
-            </optgroup>
-            <optgroup label="optgroup label 2">
-              <option role="option" value="2 Option one">2 Option one</option>
-              <option role="option" value="2 Option two">2 Option two</option>
-              <option role="option" value="2 Option three">2 Option three</option>
-            </optgroup>
-          </select>
-          <select multiple role="listbox" class="hover" name="select-multiple" size="7">
-            <option>-- Select mulitple hover --</option>
-            <optgroup label="optgroup label">
-              <option role="option" value="Option one">Option one</option>
-              <option role="option" value="Option two">Option two</option>
-              <option role="option" value="Option three">Option three</option>
-            </optgroup>
-            <optgroup label="optgroup label 2">
-              <option role="option" value="2 Option one">2 Option one</option>
-              <option role="option" value="2 Option two">2 Option two</option>
-              <option role="option" value="2 Option three">2 Option three</option>
-            </optgroup>
-          </select>
-          <select multiple role="listbox" class="focus" name="select-multiple" size="7">
-            <option>-- Select mulitple focus --</option>
-            <optgroup label="optgroup label">
-              <option role="option" value="Option one">Option one</option>
-              <option role="option" value="Option two">Option two</option>
-              <option role="option" value="Option three">Option three</option>
-            </optgroup>
-            <optgroup label="optgroup label 2">
-              <option role="option" value="2 Option one">2 Option one</option>
-              <option role="option" value="2 Option two">2 Option two</option>
-              <option role="option" value="2 Option three">2 Option three</option>
-            </optgroup>
-          </select>
-          <select multiple role="listbox" class="active" name="select-multiple" size="7">
-            <option>-- Select mulitple active --</option>
-            <optgroup label="optgroup label">
-              <option role="option" value="Option one">Option one</option>
-              <option role="option" value="Option two">Option two</option>
-              <option role="option" value="Option three">Option three</option>
-            </optgroup>
-            <optgroup label="optgroup label 2">
-              <option role="option" value="2 Option one">2 Option one</option>
-              <option role="option" value="2 Option two">2 Option two</option>
-              <option role="option" value="2 Option three">2 Option three</option>
-            </optgroup>
-          </select>
-          <select multiple role="listbox" class="disabled" name="select-multiple" size="7" disabled>
-            <option>-- Select mulitple disabled --</option>
-            <optgroup label="optgroup label">
-              <option role="option" value="Option one">Option one</option>
-              <option role="option" value="Option two">Option two</option>
-              <option role="option" value="Option three">Option three</option>
-            </optgroup>
-            <optgroup label="optgroup label 2">
-              <option role="option" value="2 Option one">2 Option one</option>
-              <option role="option" value="2 Option two">2 Option two</option>
-              <option role="option" value="2 Option three">2 Option three</option>
-            </optgroup>
-          </select>
+        <div class="row">
+          <div class="col-responsive">
+            <label>Select multiple</label>
+            <select multiple role="listbox" name="select-multiple" size="7">
+              <option value="null">-- Select mulitple --</option>
+              <optgroup label="optgroup label">
+                <option role="option" value="Option one">Option one</option>
+                <option role="option" value="Option two">Option two</option>
+                <option role="option" value="Option three">Option three</option>
+              </optgroup>
+              <optgroup label="optgroup label 2">
+                <option role="option" value="2 Option one">2 Option one</option>
+                <option role="option" value="2 Option two">2 Option two</option>
+                <option role="option" value="2 Option three">2 Option three</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <label>Select multiple hover</label>
+            <select multiple role="listbox" class="hover" name="select-multiple" size="7">
+              <option value="null">-- Select mulitple hover --</option>
+              <optgroup label="optgroup label">
+                <option role="option" value="Option one">Option one</option>
+                <option role="option" value="Option two">Option two</option>
+                <option role="option" value="Option three">Option three</option>
+              </optgroup>
+              <optgroup label="optgroup label 2">
+                <option role="option" value="2 Option one">2 Option one</option>
+                <option role="option" value="2 Option two">2 Option two</option>
+                <option role="option" value="2 Option three">2 Option three</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <label>Select multiple focus</label>
+            <select multiple role="listbox" class="focus" name="select-multiple" size="7">
+              <option value="null">-- Select mulitple focus --</option>
+              <optgroup label="optgroup label">
+                <option role="option" value="Option one">Option one</option>
+                <option role="option" value="Option two">Option two</option>
+                <option role="option" value="Option three">Option three</option>
+              </optgroup>
+              <optgroup label="optgroup label 2">
+                <option role="option" value="2 Option one">2 Option one</option>
+                <option role="option" value="2 Option two">2 Option two</option>
+                <option role="option" value="2 Option three">2 Option three</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <label>Select multiple active</label>
+            <select multiple role="listbox" class="active" name="select-multiple" size="7">
+              <option value="null">-- Select mulitple active --</option>
+              <optgroup label="optgroup label">
+                <option role="option" value="Option one">Option one</option>
+                <option role="option" value="Option two">Option two</option>
+                <option role="option" value="Option three">Option three</option>
+              </optgroup>
+              <optgroup label="optgroup label 2">
+                <option role="option" value="2 Option one">2 Option one</option>
+                <option role="option" value="2 Option two">2 Option two</option>
+                <option role="option" value="2 Option three">2 Option three</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="col-responsive">
+            <label>Select multiple disabled</label>
+            <select multiple role="listbox" class="disabled" name="select-multiple" size="7" disabled>
+              <option value="null">-- Select mulitple disabled --</option>
+              <optgroup label="optgroup label">
+                <option role="option" value="Option one">Option one</option>
+                <option role="option" value="Option two">Option two</option>
+                <option role="option" value="Option three">Option three</option>
+              </optgroup>
+              <optgroup label="optgroup label 2">
+                <option role="option" value="2 Option one">2 Option one</option>
+                <option role="option" value="2 Option two">2 Option two</option>
+                <option role="option" value="2 Option three">2 Option three</option>
+              </optgroup>
+            </select>
+          </div>
         </div>
         <br />
         <br />
@@ -602,8 +664,31 @@
         <sub id="id-superscript">superscript - sup</sub>
         <br />
         <br />
-        <svg id="id-svg">
-          <rect width="100" height="100" style="fill:#ccc;stroke-width:1;stroke:rgb(128,128,128)" /></svg>
+        <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg"
+          title="Scalable Vector Graphic (SVG)">
+          <g id="svg">
+            <g id="canvas" clip-path="url(#clip0_848_9594)">
+              <rect width="360" height="360" fill="#818181" fill-opacity="0.25" />
+              <line id="Line 1" y1="-0.5" x2="509.117" y2="-0.5"
+                transform="matrix(0.707107 0.707107 -0.0305774 0.999532 0 0)" stroke="#7E7E7E" stroke-opacity="0.5" />
+              <line id="Line 2" y1="-0.5" x2="509.117" y2="-0.5"
+                transform="matrix(-0.707107 0.707107 -0.0305774 -0.999532 360 0)" stroke="#7E7E7E"
+                stroke-opacity="0.5" />
+              <g id="alt">
+                <rect x="147.5" y="158" width="66" height="44" rx="22" fill="#818181" />
+                <path id="svg_2"
+                  d="M173.266 182.664C173.266 182.503 173.219 182.357 173.125 182.227C173.031 182.096 172.857 181.977 172.602 181.867C172.352 181.753 171.99 181.648 171.516 181.555C171.089 181.461 170.69 181.344 170.32 181.203C169.956 181.057 169.638 180.883 169.367 180.68C169.102 180.477 168.893 180.237 168.742 179.961C168.591 179.68 168.516 179.359 168.516 179C168.516 178.646 168.591 178.312 168.742 178C168.898 177.688 169.12 177.411 169.406 177.172C169.698 176.927 170.052 176.737 170.469 176.602C170.891 176.461 171.365 176.391 171.891 176.391C172.625 176.391 173.255 176.508 173.781 176.742C174.312 176.977 174.719 177.299 175 177.711C175.286 178.117 175.43 178.581 175.43 179.102H173.18C173.18 178.883 173.133 178.688 173.039 178.516C172.951 178.339 172.81 178.201 172.617 178.102C172.43 177.997 172.185 177.945 171.883 177.945C171.633 177.945 171.417 177.99 171.234 178.078C171.052 178.161 170.911 178.276 170.812 178.422C170.719 178.562 170.672 178.719 170.672 178.891C170.672 179.021 170.698 179.138 170.75 179.242C170.807 179.341 170.898 179.432 171.023 179.516C171.148 179.599 171.31 179.677 171.508 179.75C171.711 179.818 171.961 179.88 172.258 179.938C172.867 180.062 173.411 180.227 173.891 180.43C174.37 180.628 174.75 180.898 175.031 181.242C175.312 181.581 175.453 182.026 175.453 182.578C175.453 182.953 175.37 183.297 175.203 183.609C175.036 183.922 174.797 184.195 174.484 184.43C174.172 184.659 173.797 184.839 173.359 184.969C172.927 185.094 172.44 185.156 171.898 185.156C171.112 185.156 170.445 185.016 169.898 184.734C169.357 184.453 168.945 184.096 168.664 183.664C168.388 183.227 168.25 182.779 168.25 182.32H170.383C170.393 182.628 170.471 182.875 170.617 183.062C170.768 183.25 170.958 183.385 171.188 183.469C171.422 183.552 171.674 183.594 171.945 183.594C172.237 183.594 172.479 183.555 172.672 183.477C172.865 183.393 173.01 183.284 173.109 183.148C173.214 183.008 173.266 182.846 173.266 182.664ZM179.789 183.359L181.664 176.547H184.016L181.164 185H179.742L179.789 183.359ZM178.5 176.547L180.383 183.367L180.422 185H178.992L176.141 176.547H178.5ZM190.266 176.547H192.305V184.719C192.305 185.49 192.133 186.143 191.789 186.68C191.451 187.221 190.977 187.63 190.367 187.906C189.758 188.188 189.049 188.328 188.242 188.328C187.888 188.328 187.513 188.281 187.117 188.188C186.727 188.094 186.352 187.948 185.992 187.75C185.638 187.552 185.341 187.302 185.102 187L186.094 185.672C186.354 185.974 186.656 186.208 187 186.375C187.344 186.547 187.724 186.633 188.141 186.633C188.547 186.633 188.891 186.557 189.172 186.406C189.453 186.26 189.669 186.044 189.82 185.758C189.971 185.477 190.047 185.135 190.047 184.734V178.5L190.266 176.547ZM184.578 180.875V180.711C184.578 180.065 184.656 179.479 184.812 178.953C184.974 178.422 185.201 177.966 185.492 177.586C185.789 177.206 186.148 176.911 186.57 176.703C186.992 176.495 187.469 176.391 188 176.391C188.562 176.391 189.034 176.495 189.414 176.703C189.794 176.911 190.107 177.208 190.352 177.594C190.596 177.974 190.786 178.424 190.922 178.945C191.062 179.461 191.172 180.026 191.25 180.641V181C191.172 181.589 191.055 182.135 190.898 182.641C190.742 183.146 190.536 183.589 190.281 183.969C190.026 184.344 189.708 184.635 189.328 184.844C188.953 185.052 188.505 185.156 187.984 185.156C187.464 185.156 186.992 185.049 186.57 184.836C186.154 184.622 185.797 184.323 185.5 183.938C185.203 183.552 184.974 183.099 184.812 182.578C184.656 182.057 184.578 181.49 184.578 180.875ZM186.828 180.711V180.875C186.828 181.224 186.862 181.549 186.93 181.852C186.997 182.154 187.102 182.422 187.242 182.656C187.388 182.885 187.568 183.065 187.781 183.195C188 183.32 188.258 183.383 188.555 183.383C188.966 183.383 189.302 183.297 189.562 183.125C189.823 182.948 190.018 182.706 190.148 182.398C190.279 182.091 190.354 181.737 190.375 181.336V180.312C190.365 179.984 190.32 179.69 190.242 179.43C190.164 179.164 190.055 178.938 189.914 178.75C189.773 178.562 189.591 178.417 189.367 178.312C189.143 178.208 188.878 178.156 188.57 178.156C188.273 178.156 188.016 178.224 187.797 178.359C187.583 178.49 187.404 178.669 187.258 178.898C187.117 179.128 187.01 179.398 186.938 179.711C186.865 180.018 186.828 180.352 186.828 180.711Z"
+                  fill="white" />
+              </g>
+            </g>
+          </g>
+          <defs>
+            <clipPath id="clip0_848_9594">
+              <rect width="360" height="360" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+
         <br />
         <br />
         <table role="grid" id="id-table">
@@ -643,40 +728,93 @@
         </table>
         <br />
         <br />
-        <label for="id-textarea">Textarea</label>
-        <textarerole="textbox" id="id-textarea" placeholder="textarea" title="textarea">textarea</textarea>
-          <br />
-          <br />
-          <time id="id-time">12:59</time>
-          <br />
-          <br />
-          <u id="id-underline">underline - u</u>
-          <br />
-          <br />
-          <ul role="list" id="id-unordered-list">
-            <li role="listitem">unordered list - ul
-              <ul>
-                <li>list item - li
-                  <ul>
-                    <li>list item - li</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <br />
-          <br />
-          <var id="id-variable">variable - var</var>
-          <br />
-          <br />
-          <video id="id-video" width="960" poster="src/video-poster.jpg" preload="auto" controls="true" muted="false"
-            loop=""
-            title="Video by Ambient_Nature_ Atmosphere: https://www.pexels.com/video/distorted-reflections-of-a-lake-surrounding-on-its-water-surface-3230808/">
-            <source src="src/video.mp4" type="video/mp4">
-            <p>video not supported</p>
-          </video>
-          <br />
-          <br />
+
+        <div class="row">
+          <div class="col-responsive">
+            <label for="id-textarea">* Textarea required</label>
+            <textarea role="textbox" id="id-textarea" placeholder="Textarea required..." title="textarea"
+              required></textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea default</label>
+            <textarea role="textbox" placeholder="Textarea placeholder...." title="textarea default"></textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea hover</label>
+            <textarea role="textbox" placeholder="Textarea placeholder..." title="Textarea" class="hover"></textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea focus</label>
+            <textarea role="textbox" placeholder="Textarea placeholder..." title="Textarea focus"
+              class="focus"></textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea disabled</label>
+            <textarea role="textbox" placeholder="Textarea placeholder..." title="Textarea disabled" class="disabled"
+              disabled></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-responsive">
+            <label for="id-textarea">* Textarea required</label>
+            <textarea role="textbox" id="id-textarea" placeholder="Textarea required..." title="textarea"
+              required>Textarea required</textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea default</label>
+            <textarea role="textbox" placeholder="Textarea placeholder...."
+              title="textarea default">Textarea default</textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea hover</label>
+            <textarea role="textbox" placeholder="Textarea placeholder..." title="Textarea"
+              class="hover">Textarea hover</textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea focus</label>
+            <textarea role="textbox" placeholder="Textarea placeholder..." title="Textarea focus"
+              class="focus">Textarea focus</textarea>
+          </div>
+          <div class="col-responsive">
+            <label>Textarea disabled</label>
+            <textarea role="textbox" placeholder="Textarea placeholder..." title="Textarea disabled" class="disabled"
+              disabled>Textarea disabled</textarea>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <time id="id-time" title="Time 12:59">12:59</time>
+        <br />
+        <br />
+        <u id="id-underline">underline - u</u>
+        <br />
+        <br />
+        <ul role="list" id="id-unordered-list">
+          <li role="listitem">unordered list - ul
+            <ul>
+              <li>list item - li
+                <ul>
+                  <li>list item - li</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <br />
+        <br />
+        <var id="id-variable">variable - var</var>
+        <br />
+        <br />
+        <video id="id-video" width="960" poster="src/video-poster.jpg" preload="auto" controls="true" muted="false"
+          loop=""
+          title="Video by Ambient_Nature_ Atmosphere: https://www.pexels.com/video/distorted-reflections-of-a-lake-surrounding-on-its-water-surface-3230808/">
+          <source src="src/video.mp4" type="video/mp4">
+          <p>video not supported</p>
+        </video>
+        <br />
+        <br />
       </div>
     </section>
   </main>

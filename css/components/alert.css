@@ -17,14 +17,54 @@
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-.alert-brand {
-  border-color: #ADCFFF;
-  background-color: rgba(173, 207, 255, 0.25);
+.alert-gray-1 {
+  border-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 0.25);
 }
 
-.alert-primary {
-  border-color: #ADCFFF;
-  background-color: rgba(173, 207, 255, 0.25);
+.alert-gray-2 {
+  border-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.25);
+}
+
+.alert-gray-3 {
+  border-color: #cccccc;
+  background-color: rgba(204, 204, 204, 0.25);
+}
+
+.alert-gray-4 {
+  border-color: #b3b3b3;
+  background-color: rgba(179, 179, 179, 0.25);
+}
+
+.alert-gray-5 {
+  border-color: #969696;
+  background-color: rgba(150, 150, 150, 0.25);
+}
+
+.alert-gray-6 {
+  border-color: #575757;
+  background-color: rgba(87, 87, 87, 0.25);
+}
+
+.alert-gray-7 {
+  border-color: #454545;
+  background-color: rgba(69, 69, 69, 0.25);
+}
+
+.alert-gray-8 {
+  border-color: #333333;
+  background-color: rgba(51, 51, 51, 0.25);
+}
+
+.alert-gray-9 {
+  border-color: #242424;
+  background-color: rgba(36, 36, 36, 0.25);
+}
+
+.alert-gray-10 {
+  border-color: #121212;
+  background-color: rgba(18, 18, 18, 0.25);
 }
 
 /* END alert.scss *//*# sourceMappingURL=alert.css.map */

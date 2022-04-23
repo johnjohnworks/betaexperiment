@@ -136,8 +136,8 @@
 
   aside nav a:hover,
 aside nav a.hover {
-    color: cyan;
-    border-left-color: cyan;
+    color: #85ceff;
+    border-left-color: #85ceff;
     text-decoration: none;
     background-color: #1E2C40;
     outline: 0px none transparent !important;

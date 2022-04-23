@@ -5,7 +5,7 @@
 .btn,
 a.button,
 a.btn {
-    padding: 0.75em 1.5em;
+    padding: 0.5625em 0.8125em;
     background-color: #85ceff;
     border-color: black;
     border-radius: 1.625em;
@@ -76,13 +76,13 @@ a.btn.hover {
   .button-black:hover,
 .btn-black:hover,
 .btn-black.hover {
-    background-color: #108080;
+    background-color: #436780;
   }
 
   .button-black:focus,
 .btn-black:focus,
 .btn-black.focus {
-    background-color: #436780;
+    background-color: #438080;
   }
 
   .button-black:active,
@@ -110,13 +110,13 @@ a.btn.hover {
   .button-white:hover,
 .btn-white:hover,
 .btn-white.hover {
-    background-color: #8fffff;
+    background-color: #c2e7ff;
   }
 
   .button-white:focus,
 .btn-white:focus,
 .btn-white.focus {
-    background-color: #c2e7ff;
+    background-color: #c2ffff;
   }
 
   .button-white:active,
@@ -144,13 +144,13 @@ a.btn.hover {
   .button-gray-1:hover,
 .btn-gray-1:hover,
 .btn-gray-1.hover {
-    background-color: #89f9f9;
+    background-color: #bce0f9;
   }
 
   .button-gray-1:focus,
 .btn-gray-1:focus,
 .btn-gray-1.focus {
-    background-color: #bce0f9;
+    background-color: #bcf9f9;
   }
 
   .button-gray-1:active,
@@ -178,13 +178,13 @@ a.btn.hover {
   .button-gray-2:hover,
 .btn-gray-2:hover,
 .btn-gray-2.hover {
-    background-color: #83f3f3;
+    background-color: #b6daf3;
   }
 
   .button-gray-2:focus,
 .btn-gray-2:focus,
 .btn-gray-2.focus {
-    background-color: #b6daf3;
+    background-color: #b6f3f3;
   }
 
   .button-gray-2:active,
@@ -212,13 +212,13 @@ a.btn.hover {
   .button-gray-3:hover,
 .btn-gray-3:hover,
 .btn-gray-3.hover {
-    background-color: #76e6e6;
+    background-color: #a9cde6;
   }
 
   .button-gray-3:focus,
 .btn-gray-3:focus,
 .btn-gray-3.focus {
-    background-color: #a9cde6;
+    background-color: #a9e6e6;
   }
 
   .button-gray-3:active,
@@ -246,13 +246,13 @@ a.btn.hover {
   .button-gray-4:hover,
 .btn-gray-4:hover,
 .btn-gray-4.hover {
-    background-color: #69d9d9;
+    background-color: #9cc1d9;
   }
 
   .button-gray-4:focus,
 .btn-gray-4:focus,
 .btn-gray-4.focus {
-    background-color: #9cc1d9;
+    background-color: #9cd9d9;
   }
 
   .button-gray-4:active,
@@ -280,13 +280,13 @@ a.btn.hover {
   .button-gray-5:hover,
 .btn-gray-5:hover,
 .btn-gray-5.hover {
-    background-color: #5bcbcb;
+    background-color: #8eb2cb;
   }
 
   .button-gray-5:focus,
 .btn-gray-5:focus,
 .btn-gray-5.focus {
-    background-color: #8eb2cb;
+    background-color: #8ecbcb;
   }
 
   .button-gray-5:active,
@@ -314,13 +314,13 @@ a.btn.hover {
   .button-gray-6:hover,
 .btn-gray-6:hover,
 .btn-gray-6.hover {
-    background-color: #3babab;
+    background-color: #6e93ab;
   }
 
   .button-gray-6:focus,
 .btn-gray-6:focus,
 .btn-gray-6.focus {
-    background-color: #6e93ab;
+    background-color: #6eabab;
   }
 
   .button-gray-6:active,
@@ -348,13 +348,13 @@ a.btn.hover {
   .button-gray-7:hover,
 .btn-gray-7:hover,
 .btn-gray-7.hover {
-    background-color: #32a2a2;
+    background-color: #658aa2;
   }
 
   .button-gray-7:focus,
 .btn-gray-7:focus,
 .btn-gray-7.focus {
-    background-color: #658aa2;
+    background-color: #65a2a2;
   }
 
   .button-gray-7:active,
@@ -382,13 +382,13 @@ a.btn.hover {
   .button-gray-8:hover,
 .btn-gray-8:hover,
 .btn-gray-8.hover {
-    background-color: #299999;
+    background-color: #5c8199;
   }
 
   .button-gray-8:focus,
 .btn-gray-8:focus,
 .btn-gray-8.focus {
-    background-color: #5c8199;
+    background-color: #5c9999;
   }
 
   .button-gray-8:active,
@@ -416,13 +416,13 @@ a.btn.hover {
   .button-gray-9:hover,
 .btn-gray-9:hover,
 .btn-gray-9.hover {
-    background-color: #229292;
+    background-color: #557992;
   }
 
   .button-gray-9:focus,
 .btn-gray-9:focus,
 .btn-gray-9.focus {
-    background-color: #557992;
+    background-color: #559292;
   }
 
   .button-gray-9:active,
@@ -450,13 +450,13 @@ a.btn.hover {
   .button-gray-10:hover,
 .btn-gray-10:hover,
 .btn-gray-10.hover {
-    background-color: #198989;
+    background-color: #4c7089;
   }
 
   .button-gray-10:focus,
 .btn-gray-10:focus,
 .btn-gray-10.focus {
-    background-color: #4c7089;
+    background-color: #4c8989;
   }
 
   .button-gray-10:active,

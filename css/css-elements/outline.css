@@ -13,14 +13,54 @@
   outline-color: white;
 }
 
-.outline-color-brand,
-.outline-brand {
-  outline-color: #ADCFFF;
+.outline-color-gray-1,
+.outline-gray-1 {
+  outline-color: #f2f2f2;
 }
 
-.outline-color-primary,
-.outline-primary {
-  outline-color: #ADCFFF;
+.outline-color-gray-2,
+.outline-gray-2 {
+  outline-color: #e6e6e6;
+}
+
+.outline-color-gray-3,
+.outline-gray-3 {
+  outline-color: #cccccc;
+}
+
+.outline-color-gray-4,
+.outline-gray-4 {
+  outline-color: #b3b3b3;
+}
+
+.outline-color-gray-5,
+.outline-gray-5 {
+  outline-color: #969696;
+}
+
+.outline-color-gray-6,
+.outline-gray-6 {
+  outline-color: #575757;
+}
+
+.outline-color-gray-7,
+.outline-gray-7 {
+  outline-color: #454545;
+}
+
+.outline-color-gray-8,
+.outline-gray-8 {
+  outline-color: #333333;
+}
+
+.outline-color-gray-9,
+.outline-gray-9 {
+  outline-color: #242424;
+}
+
+.outline-color-gray-10,
+.outline-gray-10 {
+  outline-color: #121212;
 }
 
 /* Outline Offset */

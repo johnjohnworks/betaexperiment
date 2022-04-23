@@ -34,6 +34,8 @@ $cyan-8: #005454;
 $cyan-9: #004242;
 $cyan-10: #002b2b;
 
+$green-5: #00ff00;
+
 $yellow-1: #ffffe6;
 $yellow-2: #ffffbf;
 $yellow-3: #ffff85;
@@ -56,24 +58,26 @@ $orange-8: #803300;
 $orange-9: #632800;
 $orange-10: #451c00;
 
+$violet-5: #ed4aff;
+
 $color-primary-dark: #85ceff;
-$color-hover-dark: cyan;
+$color-hover-dark: #85ceff;
 $color-focus-dark: #85ffff;
-$color-active-dark: red;
+$color-active-dark: white;
 $color-disabled-dark: #575757;
 
 $color-primary-light: $blue-8;
 
-$error-color-dark: red;
+$error-color-dark: $violet-5;
 $danger-color-dark: $orange-3;
 $warning-color-dark: $yellow-3;
-$success-color-dark: green;
+$success-color-dark: $green-5;
 $info-color-dark: $cyan-3;
 $primary-color-dark: $blue-3;
-$brand-color-dark: #ADCFFF;
+$brand-color-dark: $color-primary-dark;
 
-$hover-color-dark: $cyan-5;
-$focus-color-dark: $blue-3;
+$hover-color-dark: $blue-3;
+$focus-color-dark: $cyan-3;
 $active-color-dark: white;
 
 $bg-primary-dark: black;

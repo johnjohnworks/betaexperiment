@@ -9,12 +9,44 @@
   border-color: white;
 }
 
-.input-brand {
-  border-color: #ADCFFF;
+.input-gray-1 {
+  border-color: #f2f2f2;
 }
 
-.input-primary {
-  border-color: #ADCFFF;
+.input-gray-2 {
+  border-color: #e6e6e6;
+}
+
+.input-gray-3 {
+  border-color: #cccccc;
+}
+
+.input-gray-4 {
+  border-color: #b3b3b3;
+}
+
+.input-gray-5 {
+  border-color: #969696;
+}
+
+.input-gray-6 {
+  border-color: #575757;
+}
+
+.input-gray-7 {
+  border-color: #454545;
+}
+
+.input-gray-8 {
+  border-color: #333333;
+}
+
+.input-gray-9 {
+  border-color: #242424;
+}
+
+.input-gray-10 {
+  border-color: #121212;
 }
 
 /* END input.scss *//*# sourceMappingURL=input.css.map */

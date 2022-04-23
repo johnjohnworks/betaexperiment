@@ -28,8 +28,9 @@
     color: $gray-5;
   }
 
-  fieldset {
-    @include border;
+  fieldset,
+  .fieldset {
+    border: thin solid rgba(255, 255, 255, 0.25);
     box-sizing: border-box;
     margin-inline-start: 0;
     margin-inline-end: 0;
@@ -42,7 +43,8 @@
     margin-bottom: 2em;
   }
 
-  legend {
+  legend,
+  .legend {
     border-width: 0;
     border-style: none;
     border-color: transparent;
@@ -60,12 +62,31 @@
     margin-top: 1em;
   }
 
-  label {
+  label,
+  .label {
     display: block;
+    height: 2.75em;
     line-height: 2.75em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
-  input {
+  label>*,
+  .label>* {
+    vertical-align: middle;
+  }
+
+  .disabled label,
+  label.disabled,
+  .disabled .label,
+  .label.disabled {
+    text-decoration: line-through;
+    color: $gray-5;
+  }
+
+  input,
+  .input {
     font: normal 1em sans-serif;
     @include border;
     background-color: $black;
@@ -73,8 +94,36 @@
     transition: all ease 1s;
   }
 
-  label+input {
-    margin-bottom: 1.375em;
+  input:required:not([value]),
+  .input.required {
+    border-color: $yellow-3;
+  }
+
+  input:focus,
+  input.focus,
+  .input.focus {
+    background-color: black;
+    border-color: $color-focus-dark;
+    -webkit-focus-ring-color: $color-focus-dark;
+  }
+
+  input:hover,
+  input.hover,
+  .input.hover {
+    background-color: $bg-hover-dark;
+    border-color: $color-hover-dark;
+    color: white;
+  }
+
+  input:focus-visible {
+    outline-color: transparent;
+    -webkit-focus-ring-color: transparent;
+  }
+
+  label+input,
+  label+select,
+  label+textarea {
+    margin-bottom: 2.75em;
   }
 
   input[type=button] {
@@ -375,19 +424,21 @@
     padding: 0.75em;
     background-color: black;
     border-radius: 0.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   input[type=text]:focus,
   input[type=text].focus {
     color: white;
-    border-color: $color-primary-dark;
     outline: none;
   }
 
   input[type=text]:hover,
   input[type=text].hover {
-    color: cyan;
-    border-color: cyan;
+    border-color: $color-hover-dark;
+    color: white;
+    outline: none;
   }
 
   input[type=text][readonly],
@@ -456,6 +507,7 @@
     border-radius: 0.25em;
     border-color: $gray-5;
     box-sizing: border-box;
+    border-width: $border-width;
     color: $color-primary-dark;
     font: normal 1em sans-serif;
     width: 100%;
@@ -476,8 +528,9 @@
   select.focus {
     background-color: black;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%2300ffff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-    color: cyan;
-    outline-color: cyan;
+    border-color: $color-focus-dark;
+    color: white;
+    outline-color: $color-hover-dark;
     outline-style: solid;
     outline-width: thin;
     outline-offset: 0;
@@ -507,7 +560,6 @@
 
   select[multiple] {
     background-image: none;
-    border: thin solid $gray-5;
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -520,6 +572,11 @@
 
   select optgroup {
     padding-left: 0.75em;
+  }
+
+  select option:hover {
+    background-color: $cyan-3;
+    color: black;
   }
 
   select[disabled],
@@ -539,15 +596,82 @@
     outline: none;
   }
 
-  textarea {
-    font: normal 1em sans-serif;
-    @include border;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    padding: 1em 1.5em;
+  textarea,
+  .textarea {
     background-color: black;
-    color: blue;
+    border-color: $gray-3;
+    border-style: solid;
+    border-radius: 0.25em;
+    border-width: $border-width;
+    box-sizing: border-box;
+    color: $color-primary-dark;
+    display: block;
+    font: normal 1em sans-serif;
+    padding: 1em;
+    transition: all ease 1s;
+    width: 100%;
+  }
+
+  textarea:required,
+  .textarea.required {
+    border-color: $yellow-3;
+  }
+
+  textarea:hover,
+  textarea.hover,
+  .textarea:hover,
+  .textarea.hover {
+    background-color: $bg-hover-dark;
+    border-color: $color-hover-dark;
+  }
+
+  textarea:focus,
+  textarea.focus,
+  .textarea:focus,
+  .textarea.focus {
+    border-color: $color-focus-dark;
+    color: white;
+    outline-color: $color-focus-dark;
+    -webkit-focus-ring-color: $color-focus-dark;
+  }
+
+  textarea:disabled,
+  textarea.disabled,
+  .textarea:disabled,
+  .textarea.disabled,
+  .disabled .textarea {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.25);
+    color: $gray-5;
+    text-decoration: line-through;
+  }
+
+  .checkbox:focus,
+  .checkbox.focus,
+  .radio:focus,
+  .radio.focus {
+    background-color: $bg-secondary-dark;
+    color: $color-focus-dark;
+    cursor: pointer;
+    transition: all ease 1s;
+  }
+
+  .checkbox:hover,
+  .checkbox.hover,
+  .radio:hover,
+  .radio.hover {
+    background-color: $bg-hover-dark;
+    color: white;
+    cursor: pointer;
+  }
+
+  .checkbox:active,
+  .checkbox.active,
+  .radio:active,
+  .radio.active {
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
 
 }
