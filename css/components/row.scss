@@ -58,7 +58,7 @@ $subtract-gap: 1.0625em;
 }
 
 /* Mobile Only */
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 50em) {
   .row {
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,15 +95,10 @@ $subtract-gap: 1.0625em;
     width: calc(25% - $subtract-gap);
   }
 
-  .col-responsive {
-    flex: 0 0 auto;
-    width: calc(50% - $subtract-gap);
-  }
-
 }
 
 /* Tablet */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .row {
     flex-direction: row;
     flex-wrap: wrap;

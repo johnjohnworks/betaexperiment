@@ -510,6 +510,22 @@
     text-transform: none;
   }
 
+  .text-primary {
+    color: #ffffff;
+  }
+
+  .text-secondary {
+    color: #d9d9d9;
+  }
+
+  .text-tertiary {
+    color: #b0b0b0;
+  }
+
+  .text-brand {
+    color: #85ceff;
+  }
+
   /* Color */
   /* Each Loop to Generate Classes */
   .text-color-black,

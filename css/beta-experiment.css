@@ -551,7 +551,6 @@ table td {
 .btn,
 a.button,
 a.btn {
-    padding: 0.5625em 0.8125em;
     background-color: #85ceff;
     border-color: black;
     border-radius: 1.625em;
@@ -559,10 +558,13 @@ a.btn {
     border-width: 0.0625em;
     color: black;
     cursor: pointer;
+    padding: 0.5625em 0.8125em;
     font-size: inherit;
     font-weight: bolder;
     text-decoration: none;
+    text-overflow: ellipsis;
     transition: all ease 1s;
+    white-space: nowrap;
   }
 
   button:focus,
@@ -1137,9 +1139,10 @@ a.btn.disabled:hover {
     padding-inline-start: 0;
     padding-inline-end: 0;
     padding-block-end: 0;
-    padding: 2.5em;
+    padding: 1em;
     margin: 0;
     margin-bottom: 2em;
+    transition: all ease 1s;
   }
 
   legend,
@@ -1773,11 +1776,21 @@ textarea.disabled,
     cursor: pointer;
   }
 }
+@media screen and (min-width: 50em) {
+  fieldset,
+.fieldset {
+    padding: 2.5em;
+  }
+}
+details {
+  transition: all ease 1s;
+}
+
 details > summary {
   color: #85ceff;
-  text-decoration: underline;
-  min-height: 2.75em;
   line-height: 2.75em;
+  min-height: 2.75em;
+  text-decoration: underline;
   transition: all ease 1s;
 }
 
@@ -20026,21 +20039,28 @@ details > summary:hover {
     padding-right: 1em;
   }
 
-  .app header a.brand {
-    text-decoration: none;
-  }
-
-  .app header a.brand img {
-    vertical-align: middle;
-  }
-
   .app header nav {
+    display: flex;
     flex: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .app header nav a.brand {
-    display: inline-block;
+    min-width: 2.75em;
     padding: 1.375em;
+    text-decoration: none;
+  }
+
+  .app header nav a.brand img {
+    min-width: 2.75em;
+    vertical-align: middle;
+  }
+
+  .app header nav .tab {
+    padding-top: 2em;
+    padding-bottom: 1.75em;
   }
 
   .app > main {
@@ -20058,6 +20078,7 @@ details > summary:hover {
     min-height: 5.5em;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
@@ -20073,11 +20094,6 @@ details > summary:hover {
 
   .page {
     padding: 1.375em;
-  }
-
-  .app header nav .tab {
-    padding-top: 2em;
-    padding-bottom: 1.75em;
   }
 }
 /* Mobile Only */
@@ -20231,7 +20247,7 @@ aside nav a.hover {
   }
 }
 /* Mobile Only */
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 50em) {
   .row {
     flex-direction: column;
     flex-wrap: wrap;
@@ -20267,14 +20283,9 @@ aside nav a.hover {
     flex: 0 0 auto;
     width: calc(25% - 1.0625em);
   }
-
-  .col-responsive {
-    flex: 0 0 auto;
-    width: calc(50% - 1.0625em);
-  }
 }
 /* Tablet */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .row {
     flex-direction: row;
     flex-wrap: wrap;
@@ -21785,6 +21796,22 @@ aside nav a.hover {
     text-transform: none;
   }
 
+  .text-primary {
+    color: #ffffff;
+  }
+
+  .text-secondary {
+    color: #d9d9d9;
+  }
+
+  .text-tertiary {
+    color: #b0b0b0;
+  }
+
+  .text-brand {
+    color: #85ceff;
+  }
+
   /* Color */
   /* Each Loop to Generate Classes */
   .text-color-black,
@@ -22669,15 +22696,37 @@ aside nav a.hover {
 }
 /* END utility.css */
 /* Start Media Queries */
+/* Screen Readers */
 @media screen {
   .screen-reader-only {
     display: none;
   }
 }
-@media screen and (max-width: 60em) {
+/* Mobile */
+@media screen and (max-width: 50em) {
   .hide-mobile,
 .hide-phone {
     display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 60em) {
+  .hide-tablet {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+/* Dektop */
+@media screen {
+  .desktop-only {
+    display: unset;
   }
 }
 /* End Media Queries */

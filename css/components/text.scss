@@ -213,6 +213,22 @@
     text-transform: none;
   }
 
+  .text-primary {
+    color: $text-primary-dark;
+  }
+
+  .text-secondary {
+    color: $text-secondary-dark;
+  }
+
+  .text-tertiary {
+    color: $text-tertiary-dark;
+  }
+
+  .text-brand {
+    color: $brand-color-dark;
+  }
+
   /* Color */
   /* Each Loop to Generate Classes */
   @each $color-name,

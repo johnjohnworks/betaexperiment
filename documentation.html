@@ -7,9 +7,9 @@
   <meta charset="UTF-8">
   <meta name="author" content="John Alexander">
   <meta name="keywords"
-    content="Communication Framework, Design System, HTML Template, CSS Framework, Web Framework, HTML, CSS, SASS, SCSS, JavaScript">
+    content="Beta Experiment, Design System, UI Kit, HTML Templates, CSS Framework, Javascript Library, JS Library, HTML, CSS, SASS, SCSS, JavaScript, JS, Figma Components, Web 3.0, Augmented Reality, AR, Virtual Reality, VR">
   <meta name="description"
-    content="Documentation for Beta Experiment, a Design &Communication Framework for Web 3.0 and AR/VR">
+    content="Documentation for Beta Experiment; Best Design System, UI Kit, HTML Templates, CSS Framework, JavaScript (JS) Library, Figma Components for Web 3.0 and AR/VR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Use these during development -->
@@ -33,9 +33,10 @@
     <nav role="navigation">
       <a href="#id-main" class="screen-reader-only">Skip navigation</a>
       <a href="index.html" class="brand" title="Beta Experiment"><img src="favicon.png" alt="logo" />
-        <span class="hide-mobile">&nbsp;<strong>Beta
+        <span class="hide-tablet">&nbsp;<strong>Beta
             Experiment</strong></span></a>
-      <a href="index.html" class="tab" title="Home"><i class="fa-solid fa-house-heart"></i><span class="hide-mobile">
+      <a href="index.html" class="tab hide-mobile" title="Home"><i class="fa-solid fa-house-heart"></i><span
+          class="hide-mobile">
           Home</span></a><span class="tab active"><i class="fa-solid fa-book"></i><span class="hide-mobile">
           Documentation</span></span><a href="https://www.figma.com/community/file/1095639605803636403" target="_blank"
         class="tab" title="Figma"><i class="fa-brands fa-figma"></i><span class="hide-mobile"> Figma</span><a
@@ -214,11 +215,12 @@
         <br id="id-break" title="break br" />
         <br />
         <br />
-        <div class="flex-row gap"><button type="button" role="button" id="id-button"
-            title="button">button</button><button type="button" role="button" class="hover"
-            title="hover">hover</button><button type="button" role="button" class="focus"
-            title="focus">focus</button><button type="button" role="button" class="active"
-            title="active">active</button><button disabled class="disabled" title="disabled">disabled</button>
+        <div>
+          <button type="button" role="button" id="id-button" title="button default">button default</button>
+          <button type="button" role="button" class="button hover" title="button hover">button hover</button>
+          <button type="button" role="button" class="button focus" title="button focus">button focus</button>
+          <button type="button" role="button" class="button active" title="button active">button active</button>
+          <button disabled class="disabled" title="button disabled">button disabled</button>
         </div>
         <br />
         <br />
@@ -371,7 +373,7 @@
             <label><abbr title="Uniform Resource Locator">URL</abbr></label>
             <input type="url" name="id-url" id="id-url" placeholder="input url" value="http://www.betaexperiment.com/"
               title="URL">
-            <div class="flex-row gap">
+            <div class="flex-row gap flex-wrap">
               <input name="id-input-button" type="button" id="id-input-button" title="input button"
                 value="input button">
               <input name="id-input-reset" type="reset" id="id-input-reset" title="input reset" value="input reset">
@@ -819,15 +821,21 @@
     </section>
   </main>
   <footer>
-    <small><span id="myDate"></span> &nbsp;&nbsp; <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-        target="_blank" title="Web Content Accessibility Guidelines"><abbr
-          title="Web Content Accessibility Guidelines">WCAG 2</abbr></a>
-      &nbsp;&nbsp; <a href="https://www.section508.gov/" target="_blank" title="Section 508 Accessibility">Section 508
-        Accessibility</a> &nbsp;&nbsp; <a href="https://choosealicense.com/licenses/agpl-3.0/" target="_blank"
+    <small><span class="hide-mobile" id="myDate"></span> <span class="hide-mobile">&nbsp;&nbsp;</span> <a
+        href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" class="hide-mobile"
+        title="Web Content Accessibility Guidelines"><abbr title="Web Content Accessibility Guidelines">WCAG
+          2</abbr></a>
+      &nbsp;&nbsp; <a href="https://www.section508.gov/" target="_blank" class="hide-mobile"
+        title="Section 508 Accessibility">Section 508
+        Accessibility</a> <span class="hide-mobile">&nbsp;&nbsp;</span> <a
+        href="https://choosealicense.com/licenses/agpl-3.0/" target="_blank" class="hide-mobile"
         title="GNU Affero General Public License v3.0">Distributed under the GNU Affero General Public License v3.0
-        (<abbr title="GNU Affero General Public License v3.0">GNU AGPLv3</abbr>)</a> &nbsp;&nbsp; <a
-        href="privacy-policy.html" title="Privacy policy">Privacy policy</a> &nbsp;&nbsp;
-      <a href="legal-notice.html" title="Legal notice">Legal notice</a></small>
+        (<abbr title="GNU Affero General Public License v3.0">GNU AGPLv3</abbr>)</a> <span
+        class="hide-mobile">&nbsp;&nbsp;</span> <a href="privacy-policy.html" title="Privacy policy"><i
+          class="fa-solid fa-lock"></i><span>
+          Privacy Policy</span></a> &nbsp;&nbsp;
+      <a href="legal-notice.html" title="Legal notice"><i class="fa-solid fa-scale-balanced"></i><span>
+          Legal notice</span></a></small>
   </footer>
 
   <!-- jQuery -->

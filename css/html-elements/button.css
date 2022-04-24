@@ -5,7 +5,6 @@
 .btn,
 a.button,
 a.btn {
-    padding: 0.5625em 0.8125em;
     background-color: #85ceff;
     border-color: black;
     border-radius: 1.625em;
@@ -13,10 +12,13 @@ a.btn {
     border-width: 0.0625em;
     color: black;
     cursor: pointer;
+    padding: 0.5625em 0.8125em;
     font-size: inherit;
     font-weight: bolder;
     text-decoration: none;
+    text-overflow: ellipsis;
     transition: all ease 1s;
+    white-space: nowrap;
   }
 
   button:focus,

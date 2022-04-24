@@ -8,7 +8,6 @@
   .btn,
   a.button,
   a.btn {
-    padding: 0.5625em 0.8125em;
     background-color: $color-primary-dark;
     border-color: black;
     border-radius: 1.625em;
@@ -16,10 +15,13 @@
     border-width: $border-width;
     color: black;
     cursor: pointer;
+    padding: 0.5625em 0.8125em;
     font-size: inherit;
     font-weight: bolder;
     text-decoration: none;
+    text-overflow: ellipsis;
     transition: all ease 1s;
+    white-space: nowrap;
   }
 
   button:focus,

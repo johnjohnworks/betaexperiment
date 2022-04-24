@@ -1,12 +1,14 @@
 @import '../variables';
 
-details {}
+details {
+  transition: all ease 1s;
+}
 
 details>summary {
   color: $color-primary-dark;
-  text-decoration: underline;
-  min-height: 2.75em;
   line-height: 2.75em;
+  min-height: 2.75em;
+  text-decoration: underline;
   transition: all ease 1s;
 }
 

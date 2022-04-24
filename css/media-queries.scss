@@ -1,17 +1,47 @@
 /* Start Media Queries */
+
+/* Screen Readers */
 @media screen {
   .screen-reader-only {
     display: none;
   }
 }
 
-@media screen and (max-width: 60em) {
+/* Mobile */
+@media screen and (max-width: 50em) {
 
   .hide-mobile,
   .hide-phone {
     display: none;
   }
 
+  .desktop-only {
+    display: none;
+  }
+
 }
+
+/* Tablet */
+@media screen and (max-width: 60em) {
+
+  .hide-tablet {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+}
+
+/* Dektop */
+@media screen {
+
+  .desktop-only {
+    display: unset;
+  }
+
+}
+
 
 /* End Media Queries */

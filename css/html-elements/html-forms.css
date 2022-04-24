@@ -34,9 +34,10 @@
     padding-inline-start: 0;
     padding-inline-end: 0;
     padding-block-end: 0;
-    padding: 2.5em;
+    padding: 1em;
     margin: 0;
     margin-bottom: 2em;
+    transition: all ease 1s;
   }
 
   legend,
@@ -668,5 +669,11 @@ textarea.disabled,
     background-color: black;
     color: white;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 50em) {
+  fieldset,
+.fieldset {
+    padding: 2.5em;
   }
 }/*# sourceMappingURL=html-forms.css.map */

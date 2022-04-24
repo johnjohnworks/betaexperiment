@@ -18,21 +18,28 @@
     padding-right: 1em;
   }
 
-  .app header a.brand {
-    text-decoration: none;
-  }
-
-  .app header a.brand img {
-    vertical-align: middle;
-  }
-
   .app header nav {
+    display: flex;
     flex: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
   .app header nav a.brand {
-    display: inline-block;
+    min-width: 2.75em;
     padding: 1.375em;
+    text-decoration: none;
+  }
+
+  .app header nav a.brand img {
+    min-width: 2.75em;
+    vertical-align: middle;
+  }
+
+  .app header nav .tab {
+    padding-top: 2em;
+    padding-bottom: 1.75em;
   }
 
   .app > main {
@@ -50,6 +57,7 @@
     min-height: 5.5em;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
@@ -65,11 +73,6 @@
 
   .page {
     padding: 1.375em;
-  }
-
-  .app header nav .tab {
-    padding-top: 2em;
-    padding-bottom: 1.75em;
   }
 }
 /* Mobile Only */
