@@ -1,9 +1,0 @@
-@import 'variables';
-
-@mixin border {
-  border: $border-width $border-style $border-color;
-}
-
-@mixin border-bottom {
-  border-bottom: $border-width $border-style $border-color;
-}
